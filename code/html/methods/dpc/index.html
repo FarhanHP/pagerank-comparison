@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>methods.dpc API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>methods.dpc</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from cache import PCache, QListCache, RPCache, PiiListCache, PastiListCache, PiastListCache
+from data.domain_repository import DomainRepository
+from model import PageInformation
+from shared_helpers import l1_norm, full_matrix, show_and_reset_smallest_and_highest_memory_usage
+from numpy.typing import NDArray
+from numpy import float_, copy
+from methods.dpc.rp_helper import RPHelper
+from methods.dpc.partitioned_p_helper import PartitionedPHelper
+from methods.dpc.cluster_separated_phi_helper import ClusterSeparatedPhiHelper
+from methods.dpc.pasti_helper import PastiHelper
+from methods.dpc.piast_helper import PiastHelper
+from methods.dpc.extended_local_transition_matrix_helper import ExtendedLocalTransitionMatrixHelper
+from typing import cast
+from shared_helpers.cluster_helper import ClusterHelper
+
+class DPCExecutor:
+  &#34;&#34;&#34;
+  main class for DPC algorithm program
+  &#34;&#34;&#34;
+
+  __p_cache: PCache
+  __q_list_cache: QListCache
+  __rp_cache: RPCache
+  __pii_list_cache: PiiListCache
+  __pasti_list_cache: PastiListCache
+  __piast_list_cache: PiastListCache
+
+  __rp_helper: RPHelper
+  __partitioned_p_helper: PartitionedPHelper
+  __cluster_separated_phi_helper: ClusterSeparatedPhiHelper
+  __pasti_helper: PastiHelper
+  __piast_helper: PiastHelper
+  __extended_local_transition_matrix_helper: ExtendedLocalTransitionMatrixHelper
+  __cluster_helper: ClusterHelper
+
+  __domain_repository: DomainRepository
+
+  def insert_caches(
+    self,
+    p_cache: PCache,
+    q_list_cache: QListCache,
+    rp_cache: RPCache,
+    pii_list_cache: PiiListCache,
+    pasti_list_cache: PastiListCache,
+    piast_list_cache: PiastListCache
+  ):
+    &#34;&#34;&#34;
+    insert cache classes that will be used later
+    &#34;&#34;&#34;
+
+    self.__p_cache = p_cache
+    self.__q_list_cache = q_list_cache
+    self.__rp_cache = rp_cache
+    self.__pii_list_cache = pii_list_cache
+    self.__pasti_list_cache = pasti_list_cache
+    self.__piast_list_cache = piast_list_cache
+
+  def insert_helpers(
+    self,
+    rp_helper: RPHelper,
+    partitioned_p_helper: PartitionedPHelper,
+    cluster_separated_phi_helper: ClusterSeparatedPhiHelper,
+    pasti_helper: PastiHelper,
+    piast_helper: PiastHelper,
+    extended_local_transition_matrix_helper: ExtendedLocalTransitionMatrixHelper,
+    cluster_helper: ClusterHelper,
+  ):
+    &#34;&#34;&#34;
+    insert helper classes that will be used later
+    &#34;&#34;&#34;
+
+    self.__rp_helper = rp_helper
+    self.__partitioned_p_helper = partitioned_p_helper
+    self.__cluster_separated_phi_helper = cluster_separated_phi_helper
+    self.__pasti_helper = pasti_helper
+    self.__piast_helper = piast_helper
+    self.__extended_local_transition_matrix_helper = extended_local_transition_matrix_helper
+    self.__cluster_helper = cluster_helper
+
+
+  def insert_repositories(self, domain_repository: DomainRepository):
+    &#34;&#34;&#34;
+    insert repository classes that will be used later
+    &#34;&#34;&#34;
+
+    self.__domain_repository = domain_repository
+
+  def execute(
+    self,
+    clusters: dict[str, list[PageInformation]], 
+    epsilon: float,
+    pagerank_dpc_max_iteration: int,
+    start_time: float
+  )-&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    entry point for DPC algorithm
+
+    Args:
+      - clusters: page informations that are grouped by their domain forming python dictionary.
+        - key: domain url
+        - value: list of page information that belong to the domain
+      - epsilon: maximum l1 norm difference/delta between pagerank vector current iteration
+      - pagerank_dpc_max_iteration: max iteration for pagerank iterations
+      - start_time: start time when this method is called in seconds
+
+    Returns:
+      - N x 1 pagerank vector
+    &#34;&#34;&#34;
+
+    page_information_in_clusters = list(clusters.values())
+    r = self.__cluster_helper.construct_r(page_information_in_clusters)
+    pages_count = self.__cluster_helper.get_all_page_counts(page_information_in_clusters)
+
+    self.__partitioned_p_helper.dump_partitioned_p(
+      page_information_in_clusters, 
+      self.__p_cache, 
+      self.__q_list_cache, 
+      self.__pii_list_cache
+    )
+
+    show_and_reset_smallest_and_highest_memory_usage(&#34;dump_partitioned_p step&#34;, start_time)
+
+    cluster_separated_phi = self.__cluster_separated_phi_helper.construct_cluster_separated_phi(
+      page_information_in_clusters, 
+      self.__q_list_cache, 
+      pagerank_dpc, epsilon,
+      pagerank_dpc_max_iteration
+    )
+
+    show_and_reset_smallest_and_highest_memory_usage(&#34;construct_cluster_separated_phi step&#34;, start_time)
+
+    self.__rp_helper.dump_and_mult_rp(
+      self.__rp_cache, r, 
+      self.__p_cache, pages_count
+    )
+
+    show_and_reset_smallest_and_highest_memory_usage(&#34;dump_and_mult_rp step&#34;, start_time)
+
+    self.__pasti_helper.construct_and_dump_pasti_list(
+      self.__pasti_list_cache, self.__p_cache, 
+      page_information_in_clusters, pages_count
+    )
+
+    show_and_reset_smallest_and_highest_memory_usage(&#34;construct_and_dump_pasti_list step&#34;, start_time)
+
+    self.__piast_helper.construct_and_dump_piast_list(
+      self.__piast_list_cache, 
+      self.__p_cache, page_information_in_clusters, 
+      pages_count
+    )
+
+    show_and_reset_smallest_and_highest_memory_usage(&#34;construct_and_dump_piast_list step&#34;, start_time)
+
+    phi = self.__cluster_separated_phi_helper.flatten_cluster_separated_phi(cluster_separated_phi)
+    old_phi = copy(phi)
+
+    print(&#34;start iterating...&#34;)
+    iteration_count = 0
+    while True:
+      iteration_count += 1
+      s = self.__cluster_separated_phi_helper.construct_s(cluster_separated_phi)
+      a = self.__rp_cache.load_rp() @ s # A = RPS(phi^k)
+      z = pagerank_dpc(full_matrix(a.shape[0], 1/len(clusters)), a, epsilon, pagerank_dpc_max_iteration, f&#34;pagerank_z-{iteration_count}&#34;)
+
+      b_list = self.__extended_local_transition_matrix_helper.construct_extended_local_transition_matrice(
+        self.__pii_list_cache, 
+        self.__piast_list_cache, 
+        self.__pasti_list_cache, 
+        s, z, cluster_separated_phi, 
+        pages_count
+      )
+
+      extended_local_pagerank_list = self.__construct_extended_local_pagerank_list(b_list, epsilon, iteration_count, pagerank_dpc_max_iteration)
+      cluster_separated_phi = self.__cluster_separated_phi_helper.get_new_cluster_separated_phi(z, extended_local_pagerank_list)
+      phi = self.__cluster_separated_phi_helper.flatten_cluster_separated_phi(cluster_separated_phi)
+      phi = cast(NDArray[float_], phi/l1_norm(phi))
+
+      delta = l1_norm(phi - old_phi)
+      print(f&#34;delta = {delta}&#34;)
+      if(delta &lt; epsilon or iteration_count &gt;= pagerank_dpc_max_iteration):
+        self.__update_domain_ranks(z, clusters)
+        break
+
+      old_phi = copy(phi)
+
+    return phi
+  
+  def __update_domain_ranks(self, z: NDArray[float_], clusters: dict[str, list[PageInformation]]):
+    self.__domain_repository.update_dpc_rank(list(clusters.keys()), [float(domain_rank) for domain_rank in z])
+  
+  def __construct_extended_local_pagerank_list(
+    self, b_list: list[NDArray[float_]], epsilon: float, no: int, pagerank_dpc_max_iteration: int
+  ) -&gt; list[NDArray[float_]]:
+    clusters_count = len(b_list)
+
+    return [pagerank_dpc(
+      self.__create_initial_phi(b_list[cluster_no].shape[0]),
+      b_list[cluster_no], epsilon, pagerank_dpc_max_iteration,
+      f&#34;construct_extended_local_pagerank_list-{no}&#34;
+    ) for cluster_no in range(clusters_count)]
+
+  def __create_initial_phi(self, ni_plus_1) -&gt; NDArray[float_]:
+    return full_matrix(ni_plus_1, 1/ni_plus_1)
+  
+
+def pagerank_dpc(
+  phi: NDArray[float_], 
+  p: NDArray[float_],
+  epsilon: float,
+  max_iteration: int,
+  log_name: str
+) -&gt; NDArray[float_]:
+  &#34;&#34;&#34;
+  pagerank computation for DPC algorithm
+
+  Args:
+    epsilon: maximum l1 norm difference/delta between pagerank vector current iteration
+    p: transition N x N matrix
+    phi: initial pagerank N x 1 vector
+    max_iteration: iteration maximum 
+    log_name: for logging purpose name that will displayed in log for each iteration
+
+  Returns:
+    phi: final pagerank N x 1 vector
+  &#34;&#34;&#34;
+
+  new_phi = full_matrix(phi.shape, 0)
+
+  iteration_count = 0
+  while True:
+    iteration_count += 1
+    new_phi: NDArray[float_] = p @ phi
+    new_phi = cast(NDArray[float_], new_phi / l1_norm(new_phi))
+
+    if(l1_norm(new_phi - phi) &lt; epsilon or iteration_count &gt;= max_iteration):
+      print(f&#34;{log_name} {iteration_count} iteration count&#34;)
+      return new_phi
+
+    phi = new_phi</code></pre>
+</details>
+</section>
+<section>
+<h2 class="section-title" id="header-submodules">Sub-modules</h2>
+<dl>
+<dt><code class="name"><a title="methods.dpc.cluster_separated_phi_helper" href="cluster_separated_phi_helper.html">methods.dpc.cluster_separated_phi_helper</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt><code class="name"><a title="methods.dpc.extended_local_transition_matrix_helper" href="extended_local_transition_matrix_helper.html">methods.dpc.extended_local_transition_matrix_helper</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt><code class="name"><a title="methods.dpc.p_helper" href="p_helper.html">methods.dpc.p_helper</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt><code class="name"><a title="methods.dpc.partitioned_p_helper" href="partitioned_p_helper.html">methods.dpc.partitioned_p_helper</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt><code class="name"><a title="methods.dpc.pasti_helper" href="pasti_helper.html">methods.dpc.pasti_helper</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt><code class="name"><a title="methods.dpc.piast_helper" href="piast_helper.html">methods.dpc.piast_helper</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt><code class="name"><a title="methods.dpc.rp_helper" href="rp_helper.html">methods.dpc.rp_helper</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="methods.dpc.pagerank_dpc"><code class="name flex">
+<span>def <span class="ident">pagerank_dpc</span></span>(<span>phi: numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]], p: numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]], epsilon: float, max_iteration: int, log_name: str) ‑> numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>pagerank computation for DPC algorithm</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>epsilon</code></strong></dt>
+<dd>maximum l1 norm difference/delta between pagerank vector current iteration</dd>
+<dt><strong><code>p</code></strong></dt>
+<dd>transition N x N matrix</dd>
+<dt><strong><code>phi</code></strong></dt>
+<dd>initial pagerank N x 1 vector</dd>
+<dt><strong><code>max_iteration</code></strong></dt>
+<dd>iteration maximum </dd>
+<dt><strong><code>log_name</code></strong></dt>
+<dd>for logging purpose name that will displayed in log for each iteration</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>phi</code></dt>
+<dd>final pagerank N x 1 vector</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def pagerank_dpc(
+  phi: NDArray[float_], 
+  p: NDArray[float_],
+  epsilon: float,
+  max_iteration: int,
+  log_name: str
+) -&gt; NDArray[float_]:
+  &#34;&#34;&#34;
+  pagerank computation for DPC algorithm
+
+  Args:
+    epsilon: maximum l1 norm difference/delta between pagerank vector current iteration
+    p: transition N x N matrix
+    phi: initial pagerank N x 1 vector
+    max_iteration: iteration maximum 
+    log_name: for logging purpose name that will displayed in log for each iteration
+
+  Returns:
+    phi: final pagerank N x 1 vector
+  &#34;&#34;&#34;
+
+  new_phi = full_matrix(phi.shape, 0)
+
+  iteration_count = 0
+  while True:
+    iteration_count += 1
+    new_phi: NDArray[float_] = p @ phi
+    new_phi = cast(NDArray[float_], new_phi / l1_norm(new_phi))
+
+    if(l1_norm(new_phi - phi) &lt; epsilon or iteration_count &gt;= max_iteration):
+      print(f&#34;{log_name} {iteration_count} iteration count&#34;)
+      return new_phi
+
+    phi = new_phi</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="methods.dpc.DPCExecutor"><code class="flex name class">
+<span>class <span class="ident">DPCExecutor</span></span>
+</code></dt>
+<dd>
+<div class="desc"><p>main class for DPC algorithm program</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DPCExecutor:
+  &#34;&#34;&#34;
+  main class for DPC algorithm program
+  &#34;&#34;&#34;
+
+  __p_cache: PCache
+  __q_list_cache: QListCache
+  __rp_cache: RPCache
+  __pii_list_cache: PiiListCache
+  __pasti_list_cache: PastiListCache
+  __piast_list_cache: PiastListCache
+
+  __rp_helper: RPHelper
+  __partitioned_p_helper: PartitionedPHelper
+  __cluster_separated_phi_helper: ClusterSeparatedPhiHelper
+  __pasti_helper: PastiHelper
+  __piast_helper: PiastHelper
+  __extended_local_transition_matrix_helper: ExtendedLocalTransitionMatrixHelper
+  __cluster_helper: ClusterHelper
+
+  __domain_repository: DomainRepository
+
+  def insert_caches(
+    self,
+    p_cache: PCache,
+    q_list_cache: QListCache,
+    rp_cache: RPCache,
+    pii_list_cache: PiiListCache,
+    pasti_list_cache: PastiListCache,
+    piast_list_cache: PiastListCache
+  ):
+    &#34;&#34;&#34;
+    insert cache classes that will be used later
+    &#34;&#34;&#34;
+
+    self.__p_cache = p_cache
+    self.__q_list_cache = q_list_cache
+    self.__rp_cache = rp_cache
+    self.__pii_list_cache = pii_list_cache
+    self.__pasti_list_cache = pasti_list_cache
+    self.__piast_list_cache = piast_list_cache
+
+  def insert_helpers(
+    self,
+    rp_helper: RPHelper,
+    partitioned_p_helper: PartitionedPHelper,
+    cluster_separated_phi_helper: ClusterSeparatedPhiHelper,
+    pasti_helper: PastiHelper,
+    piast_helper: PiastHelper,
+    extended_local_transition_matrix_helper: ExtendedLocalTransitionMatrixHelper,
+    cluster_helper: ClusterHelper,
+  ):
+    &#34;&#34;&#34;
+    insert helper classes that will be used later
+    &#34;&#34;&#34;
+
+    self.__rp_helper = rp_helper
+    self.__partitioned_p_helper = partitioned_p_helper
+    self.__cluster_separated_phi_helper = cluster_separated_phi_helper
+    self.__pasti_helper = pasti_helper
+    self.__piast_helper = piast_helper
+    self.__extended_local_transition_matrix_helper = extended_local_transition_matrix_helper
+    self.__cluster_helper = cluster_helper
+
+
+  def insert_repositories(self, domain_repository: DomainRepository):
+    &#34;&#34;&#34;
+    insert repository classes that will be used later
+    &#34;&#34;&#34;
+
+    self.__domain_repository = domain_repository
+
+  def execute(
+    self,
+    clusters: dict[str, list[PageInformation]], 
+    epsilon: float,
+    pagerank_dpc_max_iteration: int,
+    start_time: float
+  )-&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    entry point for DPC algorithm
+
+    Args:
+      - clusters: page informations that are grouped by their domain forming python dictionary.
+        - key: domain url
+        - value: list of page information that belong to the domain
+      - epsilon: maximum l1 norm difference/delta between pagerank vector current iteration
+      - pagerank_dpc_max_iteration: max iteration for pagerank iterations
+      - start_time: start time when this method is called in seconds
+
+    Returns:
+      - N x 1 pagerank vector
+    &#34;&#34;&#34;
+
+    page_information_in_clusters = list(clusters.values())
+    r = self.__cluster_helper.construct_r(page_information_in_clusters)
+    pages_count = self.__cluster_helper.get_all_page_counts(page_information_in_clusters)
+
+    self.__partitioned_p_helper.dump_partitioned_p(
+      page_information_in_clusters, 
+      self.__p_cache, 
+      self.__q_list_cache, 
+      self.__pii_list_cache
+    )
+
+    show_and_reset_smallest_and_highest_memory_usage(&#34;dump_partitioned_p step&#34;, start_time)
+
+    cluster_separated_phi = self.__cluster_separated_phi_helper.construct_cluster_separated_phi(
+      page_information_in_clusters, 
+      self.__q_list_cache, 
+      pagerank_dpc, epsilon,
+      pagerank_dpc_max_iteration
+    )
+
+    show_and_reset_smallest_and_highest_memory_usage(&#34;construct_cluster_separated_phi step&#34;, start_time)
+
+    self.__rp_helper.dump_and_mult_rp(
+      self.__rp_cache, r, 
+      self.__p_cache, pages_count
+    )
+
+    show_and_reset_smallest_and_highest_memory_usage(&#34;dump_and_mult_rp step&#34;, start_time)
+
+    self.__pasti_helper.construct_and_dump_pasti_list(
+      self.__pasti_list_cache, self.__p_cache, 
+      page_information_in_clusters, pages_count
+    )
+
+    show_and_reset_smallest_and_highest_memory_usage(&#34;construct_and_dump_pasti_list step&#34;, start_time)
+
+    self.__piast_helper.construct_and_dump_piast_list(
+      self.__piast_list_cache, 
+      self.__p_cache, page_information_in_clusters, 
+      pages_count
+    )
+
+    show_and_reset_smallest_and_highest_memory_usage(&#34;construct_and_dump_piast_list step&#34;, start_time)
+
+    phi = self.__cluster_separated_phi_helper.flatten_cluster_separated_phi(cluster_separated_phi)
+    old_phi = copy(phi)
+
+    print(&#34;start iterating...&#34;)
+    iteration_count = 0
+    while True:
+      iteration_count += 1
+      s = self.__cluster_separated_phi_helper.construct_s(cluster_separated_phi)
+      a = self.__rp_cache.load_rp() @ s # A = RPS(phi^k)
+      z = pagerank_dpc(full_matrix(a.shape[0], 1/len(clusters)), a, epsilon, pagerank_dpc_max_iteration, f&#34;pagerank_z-{iteration_count}&#34;)
+
+      b_list = self.__extended_local_transition_matrix_helper.construct_extended_local_transition_matrice(
+        self.__pii_list_cache, 
+        self.__piast_list_cache, 
+        self.__pasti_list_cache, 
+        s, z, cluster_separated_phi, 
+        pages_count
+      )
+
+      extended_local_pagerank_list = self.__construct_extended_local_pagerank_list(b_list, epsilon, iteration_count, pagerank_dpc_max_iteration)
+      cluster_separated_phi = self.__cluster_separated_phi_helper.get_new_cluster_separated_phi(z, extended_local_pagerank_list)
+      phi = self.__cluster_separated_phi_helper.flatten_cluster_separated_phi(cluster_separated_phi)
+      phi = cast(NDArray[float_], phi/l1_norm(phi))
+
+      delta = l1_norm(phi - old_phi)
+      print(f&#34;delta = {delta}&#34;)
+      if(delta &lt; epsilon or iteration_count &gt;= pagerank_dpc_max_iteration):
+        self.__update_domain_ranks(z, clusters)
+        break
+
+      old_phi = copy(phi)
+
+    return phi
+  
+  def __update_domain_ranks(self, z: NDArray[float_], clusters: dict[str, list[PageInformation]]):
+    self.__domain_repository.update_dpc_rank(list(clusters.keys()), [float(domain_rank) for domain_rank in z])
+  
+  def __construct_extended_local_pagerank_list(
+    self, b_list: list[NDArray[float_]], epsilon: float, no: int, pagerank_dpc_max_iteration: int
+  ) -&gt; list[NDArray[float_]]:
+    clusters_count = len(b_list)
+
+    return [pagerank_dpc(
+      self.__create_initial_phi(b_list[cluster_no].shape[0]),
+      b_list[cluster_no], epsilon, pagerank_dpc_max_iteration,
+      f&#34;construct_extended_local_pagerank_list-{no}&#34;
+    ) for cluster_no in range(clusters_count)]
+
+  def __create_initial_phi(self, ni_plus_1) -&gt; NDArray[float_]:
+    return full_matrix(ni_plus_1, 1/ni_plus_1)</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="methods.dpc.DPCExecutor.execute"><code class="name flex">
+<span>def <span class="ident">execute</span></span>(<span>self, clusters: dict[str, list[<a title="model.PageInformation" href="../../model/index.html#model.PageInformation">PageInformation</a>]], epsilon: float, pagerank_dpc_max_iteration: int, start_time: float) ‑> numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>entry point for DPC algorithm</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>clusters: page informations that are grouped by their domain forming python dictionary.</li>
+<li>key: domain url</li>
+<li>value: list of page information that belong to the domain</li>
+<li>epsilon: maximum l1 norm difference/delta between pagerank vector current iteration</li>
+<li>pagerank_dpc_max_iteration: max iteration for pagerank iterations</li>
+<li>start_time: start time when this method is called in seconds</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<ul>
+<li>N x 1 pagerank vector</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def execute(
+  self,
+  clusters: dict[str, list[PageInformation]], 
+  epsilon: float,
+  pagerank_dpc_max_iteration: int,
+  start_time: float
+)-&gt; NDArray[float_]:
+  &#34;&#34;&#34;
+  entry point for DPC algorithm
+
+  Args:
+    - clusters: page informations that are grouped by their domain forming python dictionary.
+      - key: domain url
+      - value: list of page information that belong to the domain
+    - epsilon: maximum l1 norm difference/delta between pagerank vector current iteration
+    - pagerank_dpc_max_iteration: max iteration for pagerank iterations
+    - start_time: start time when this method is called in seconds
+
+  Returns:
+    - N x 1 pagerank vector
+  &#34;&#34;&#34;
+
+  page_information_in_clusters = list(clusters.values())
+  r = self.__cluster_helper.construct_r(page_information_in_clusters)
+  pages_count = self.__cluster_helper.get_all_page_counts(page_information_in_clusters)
+
+  self.__partitioned_p_helper.dump_partitioned_p(
+    page_information_in_clusters, 
+    self.__p_cache, 
+    self.__q_list_cache, 
+    self.__pii_list_cache
+  )
+
+  show_and_reset_smallest_and_highest_memory_usage(&#34;dump_partitioned_p step&#34;, start_time)
+
+  cluster_separated_phi = self.__cluster_separated_phi_helper.construct_cluster_separated_phi(
+    page_information_in_clusters, 
+    self.__q_list_cache, 
+    pagerank_dpc, epsilon,
+    pagerank_dpc_max_iteration
+  )
+
+  show_and_reset_smallest_and_highest_memory_usage(&#34;construct_cluster_separated_phi step&#34;, start_time)
+
+  self.__rp_helper.dump_and_mult_rp(
+    self.__rp_cache, r, 
+    self.__p_cache, pages_count
+  )
+
+  show_and_reset_smallest_and_highest_memory_usage(&#34;dump_and_mult_rp step&#34;, start_time)
+
+  self.__pasti_helper.construct_and_dump_pasti_list(
+    self.__pasti_list_cache, self.__p_cache, 
+    page_information_in_clusters, pages_count
+  )
+
+  show_and_reset_smallest_and_highest_memory_usage(&#34;construct_and_dump_pasti_list step&#34;, start_time)
+
+  self.__piast_helper.construct_and_dump_piast_list(
+    self.__piast_list_cache, 
+    self.__p_cache, page_information_in_clusters, 
+    pages_count
+  )
+
+  show_and_reset_smallest_and_highest_memory_usage(&#34;construct_and_dump_piast_list step&#34;, start_time)
+
+  phi = self.__cluster_separated_phi_helper.flatten_cluster_separated_phi(cluster_separated_phi)
+  old_phi = copy(phi)
+
+  print(&#34;start iterating...&#34;)
+  iteration_count = 0
+  while True:
+    iteration_count += 1
+    s = self.__cluster_separated_phi_helper.construct_s(cluster_separated_phi)
+    a = self.__rp_cache.load_rp() @ s # A = RPS(phi^k)
+    z = pagerank_dpc(full_matrix(a.shape[0], 1/len(clusters)), a, epsilon, pagerank_dpc_max_iteration, f&#34;pagerank_z-{iteration_count}&#34;)
+
+    b_list = self.__extended_local_transition_matrix_helper.construct_extended_local_transition_matrice(
+      self.__pii_list_cache, 
+      self.__piast_list_cache, 
+      self.__pasti_list_cache, 
+      s, z, cluster_separated_phi, 
+      pages_count
+    )
+
+    extended_local_pagerank_list = self.__construct_extended_local_pagerank_list(b_list, epsilon, iteration_count, pagerank_dpc_max_iteration)
+    cluster_separated_phi = self.__cluster_separated_phi_helper.get_new_cluster_separated_phi(z, extended_local_pagerank_list)
+    phi = self.__cluster_separated_phi_helper.flatten_cluster_separated_phi(cluster_separated_phi)
+    phi = cast(NDArray[float_], phi/l1_norm(phi))
+
+    delta = l1_norm(phi - old_phi)
+    print(f&#34;delta = {delta}&#34;)
+    if(delta &lt; epsilon or iteration_count &gt;= pagerank_dpc_max_iteration):
+      self.__update_domain_ranks(z, clusters)
+      break
+
+    old_phi = copy(phi)
+
+  return phi</code></pre>
+</details>
+</dd>
+<dt id="methods.dpc.DPCExecutor.insert_caches"><code class="name flex">
+<span>def <span class="ident">insert_caches</span></span>(<span>self, p_cache: <a title="cache.PCache" href="../../cache/index.html#cache.PCache">PCache</a>, q_list_cache: <a title="cache.QListCache" href="../../cache/index.html#cache.QListCache">QListCache</a>, rp_cache: <a title="cache.RPCache" href="../../cache/index.html#cache.RPCache">RPCache</a>, pii_list_cache: <a title="cache.PiiListCache" href="../../cache/index.html#cache.PiiListCache">PiiListCache</a>, pasti_list_cache: <a title="cache.PastiListCache" href="../../cache/index.html#cache.PastiListCache">PastiListCache</a>, piast_list_cache: <a title="cache.PiastListCache" href="../../cache/index.html#cache.PiastListCache">PiastListCache</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>insert cache classes that will be used later</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def insert_caches(
+  self,
+  p_cache: PCache,
+  q_list_cache: QListCache,
+  rp_cache: RPCache,
+  pii_list_cache: PiiListCache,
+  pasti_list_cache: PastiListCache,
+  piast_list_cache: PiastListCache
+):
+  &#34;&#34;&#34;
+  insert cache classes that will be used later
+  &#34;&#34;&#34;
+
+  self.__p_cache = p_cache
+  self.__q_list_cache = q_list_cache
+  self.__rp_cache = rp_cache
+  self.__pii_list_cache = pii_list_cache
+  self.__pasti_list_cache = pasti_list_cache
+  self.__piast_list_cache = piast_list_cache</code></pre>
+</details>
+</dd>
+<dt id="methods.dpc.DPCExecutor.insert_helpers"><code class="name flex">
+<span>def <span class="ident">insert_helpers</span></span>(<span>self, rp_helper: <a title="methods.dpc.rp_helper.RPHelper" href="rp_helper.html#methods.dpc.rp_helper.RPHelper">RPHelper</a>, partitioned_p_helper: <a title="methods.dpc.partitioned_p_helper.PartitionedPHelper" href="partitioned_p_helper.html#methods.dpc.partitioned_p_helper.PartitionedPHelper">PartitionedPHelper</a>, cluster_separated_phi_helper: <a title="methods.dpc.cluster_separated_phi_helper.ClusterSeparatedPhiHelper" href="cluster_separated_phi_helper.html#methods.dpc.cluster_separated_phi_helper.ClusterSeparatedPhiHelper">ClusterSeparatedPhiHelper</a>, pasti_helper: <a title="methods.dpc.pasti_helper.PastiHelper" href="pasti_helper.html#methods.dpc.pasti_helper.PastiHelper">PastiHelper</a>, piast_helper: <a title="methods.dpc.piast_helper.PiastHelper" href="piast_helper.html#methods.dpc.piast_helper.PiastHelper">PiastHelper</a>, extended_local_transition_matrix_helper: <a title="methods.dpc.extended_local_transition_matrix_helper.ExtendedLocalTransitionMatrixHelper" href="extended_local_transition_matrix_helper.html#methods.dpc.extended_local_transition_matrix_helper.ExtendedLocalTransitionMatrixHelper">ExtendedLocalTransitionMatrixHelper</a>, cluster_helper: <a title="shared_helpers.cluster_helper.ClusterHelper" href="../../shared_helpers/cluster_helper.html#shared_helpers.cluster_helper.ClusterHelper">ClusterHelper</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>insert helper classes that will be used later</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def insert_helpers(
+  self,
+  rp_helper: RPHelper,
+  partitioned_p_helper: PartitionedPHelper,
+  cluster_separated_phi_helper: ClusterSeparatedPhiHelper,
+  pasti_helper: PastiHelper,
+  piast_helper: PiastHelper,
+  extended_local_transition_matrix_helper: ExtendedLocalTransitionMatrixHelper,
+  cluster_helper: ClusterHelper,
+):
+  &#34;&#34;&#34;
+  insert helper classes that will be used later
+  &#34;&#34;&#34;
+
+  self.__rp_helper = rp_helper
+  self.__partitioned_p_helper = partitioned_p_helper
+  self.__cluster_separated_phi_helper = cluster_separated_phi_helper
+  self.__pasti_helper = pasti_helper
+  self.__piast_helper = piast_helper
+  self.__extended_local_transition_matrix_helper = extended_local_transition_matrix_helper
+  self.__cluster_helper = cluster_helper</code></pre>
+</details>
+</dd>
+<dt id="methods.dpc.DPCExecutor.insert_repositories"><code class="name flex">
+<span>def <span class="ident">insert_repositories</span></span>(<span>self, domain_repository: <a title="data.domain_repository.DomainRepository" href="../../data/domain_repository.html#data.domain_repository.DomainRepository">DomainRepository</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>insert repository classes that will be used later</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def insert_repositories(self, domain_repository: DomainRepository):
+  &#34;&#34;&#34;
+  insert repository classes that will be used later
+  &#34;&#34;&#34;
+
+  self.__domain_repository = domain_repository</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="methods" href="../index.html">methods</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-submodules">Sub-modules</a></h3>
+<ul>
+<li><code><a title="methods.dpc.cluster_separated_phi_helper" href="cluster_separated_phi_helper.html">methods.dpc.cluster_separated_phi_helper</a></code></li>
+<li><code><a title="methods.dpc.extended_local_transition_matrix_helper" href="extended_local_transition_matrix_helper.html">methods.dpc.extended_local_transition_matrix_helper</a></code></li>
+<li><code><a title="methods.dpc.p_helper" href="p_helper.html">methods.dpc.p_helper</a></code></li>
+<li><code><a title="methods.dpc.partitioned_p_helper" href="partitioned_p_helper.html">methods.dpc.partitioned_p_helper</a></code></li>
+<li><code><a title="methods.dpc.pasti_helper" href="pasti_helper.html">methods.dpc.pasti_helper</a></code></li>
+<li><code><a title="methods.dpc.piast_helper" href="piast_helper.html">methods.dpc.piast_helper</a></code></li>
+<li><code><a title="methods.dpc.rp_helper" href="rp_helper.html">methods.dpc.rp_helper</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="methods.dpc.pagerank_dpc" href="#methods.dpc.pagerank_dpc">pagerank_dpc</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="methods.dpc.DPCExecutor" href="#methods.dpc.DPCExecutor">DPCExecutor</a></code></h4>
+<ul class="">
+<li><code><a title="methods.dpc.DPCExecutor.execute" href="#methods.dpc.DPCExecutor.execute">execute</a></code></li>
+<li><code><a title="methods.dpc.DPCExecutor.insert_caches" href="#methods.dpc.DPCExecutor.insert_caches">insert_caches</a></code></li>
+<li><code><a title="methods.dpc.DPCExecutor.insert_helpers" href="#methods.dpc.DPCExecutor.insert_helpers">insert_helpers</a></code></li>
+<li><code><a title="methods.dpc.DPCExecutor.insert_repositories" href="#methods.dpc.DPCExecutor.insert_repositories">insert_repositories</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

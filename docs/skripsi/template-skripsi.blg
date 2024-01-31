@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: template-skripsi.aux
+A level-1 auxiliary file: halaman-persembahan.aux
+A level-1 auxiliary file: kata-pengantar.aux
+A level-1 auxiliary file: abstrak.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: bab1.aux
+A level-1 auxiliary file: bab2.aux
+A level-1 auxiliary file: bab3.aux
+A level-1 auxiliary file: bab4.aux
+A level-1 auxiliary file: bab5.aux
+The style file: myapalike.bst
+A level-1 auxiliary file: lampiran.aux
+A level-1 auxiliary file: daftar-riwayat-hidup.aux
+Database file #1: daftar-pustaka.bib
+Warning--empty journal in brin1998anatomy
+Warning--empty journal in khatulistiwa2022SearchEngine
+Warning--empty journal in pratama2022indexer
+Warning--empty journal in qoriiba2021perancangan
+Warning--empty journal in zalghornain2022indexer
+You've used 23 entries,
+            1935 wiz_defined-function locations,
+            606 strings with 7763 characters,
+and the built_in function-call counts, 7427 in all, are:
+= -- 737
+> -- 261
+< -- 20
++ -- 86
+- -- 82
+* -- 556
+:= -- 1351
+add.period$ -- 63
+call.type$ -- 23
+change.case$ -- 155
+chr.to.int$ -- 23
+cite$ -- 28
+duplicate$ -- 308
+empty$ -- 508
+format.name$ -- 113
+if$ -- 1423
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 15
+newline$ -- 112
+num.names$ -- 69
+pop$ -- 134
+preamble$ -- 1
+purify$ -- 156
+quote$ -- 0
+skip$ -- 251
+stack$ -- 0
+substring$ -- 444
+swap$ -- 28
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 136
+warning$ -- 5
+while$ -- 61
+width$ -- 0
+write$ -- 274
+(There were 5 warnings)

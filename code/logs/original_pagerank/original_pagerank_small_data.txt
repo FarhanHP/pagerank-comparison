@@ -1,0 +1,171 @@
+fill_X_column_values for page index: 2 done; thread_id=11121
+fill_X_column_values for page index: 0 done; thread_id=11119
+fill_X_column_values for page index: 1 done; thread_id=11120
+fill_X_column_values for page index: 3 done; thread_id=11122
+fill_X_column_values for page index: 4 done; thread_id=11123
+fill_X_column_values for page index: 5 done; thread_id=11124
+fill_X_column_values for page index: 6 done; thread_id=11125
+fill_X_column_values for page index: 9 done; thread_id=11126
+fill_X_column_values for page index: 7 done; thread_id=11121
+fill_X_column_values for page index: 13 done; thread_id=11128
+fill_X_column_values for page index: 18 done; thread_id=11130
+fill_X_column_values for page index: 8 done; thread_id=11119
+fill_X_column_values for page index: 21 done; thread_id=11121
+fill_X_column_values for page index: 12 done; thread_id=11123
+fill_X_column_values for page index: 15 done; thread_id=11127
+fill_X_column_values for page index: 14 done; thread_id=11125
+fill_X_column_values for page index: 16 done; thread_id=11129
+fill_X_column_values for page index: 25 done; thread_id=11135
+fill_X_column_values for page index: 23 done; thread_id=11132
+fill_X_column_values for page index: 17 done; thread_id=11124
+fill_X_column_values for page index: 19 done; thread_id=11131
+fill_X_column_values for page index: 24 done; thread_id=11134
+fill_X_column_values for page index: 10 done; thread_id=11120
+fill_X_column_values for page index: 32 done; thread_id=11127
+fill_X_column_values for page index: 36 done; thread_id=11125
+fill_X_column_values for page index: 33 done; thread_id=11130
+fill_X_column_values for page index: 31 done; thread_id=11121
+fill_X_column_values for page index: 20 done; thread_id=11126
+fill_X_column_values for page index: 29 done; thread_id=11123
+fill_X_column_values for page index: 34 done; thread_id=11138
+fill_X_column_values for page index: 40 done; thread_id=11131
+fill_X_column_values for page index: 26 done; thread_id=11119
+fill_X_column_values for page index: 39 done; thread_id=11135
+fill_X_column_values for page index: 37 done; thread_id=11129
+fill_X_column_values for page index: 27 done; thread_id=11136
+fill_X_column_values for page index: 28 done; thread_id=11128
+fill_X_column_values for page index: 38 done; thread_id=11124
+fill_X_column_values for page index: 45 done; thread_id=11143
+fill_X_column_values for page index: 22 done; thread_id=11133
+fill_X_column_values for page index: 30 done; thread_id=11137
+fill_X_column_values for page index: 43 done; thread_id=11134
+fill_X_column_values for page index: 42 done; thread_id=11142
+fill_X_column_values for page index: 44 done; thread_id=11120
+fill_X_column_values for page index: 74 done; thread_id=11137
+fill_X_column_values for page index: 49 done; thread_id=11126
+fill_X_column_values for page index: 50 done; thread_id=11127
+fill_X_column_values for page index: 55 done; thread_id=11123
+fill_X_column_values for page index: 53 done; thread_id=11121
+fill_X_column_values for page index: 54 done; thread_id=11146
+fill_X_column_values for page index: 59 done; thread_id=11131
+fill_X_column_values for page index: 41 done; thread_id=11140
+fill_X_column_values for page index: 56 done; thread_id=11119
+fill_X_column_values for page index: 52 done; thread_id=11130
+fill_X_column_values for page index: 46 done; thread_id=11125
+fill_X_column_values for page index: 69 done; thread_id=11154
+fill_X_column_values for page index: 73 done; thread_id=11143
+fill_X_column_values for page index: 66 done; thread_id=11136
+fill_X_column_values for page index: 60 done; thread_id=11148
+fill_X_column_values for page index: 48 done; thread_id=11144
+fill_X_column_values for page index: 71 done; thread_id=11153
+fill_X_column_values for page index: 67 done; thread_id=11128
+fill_X_column_values for page index: 64 done; thread_id=11150
+fill_X_column_values for page index: 35 done; thread_id=11139
+fill_X_column_values for page index: 51 done; thread_id=11145
+fill_X_column_values for page index: 62 done; thread_id=11129
+fill_X_column_values for page index: 77 done; thread_id=11156
+fill_X_column_values for page index: 70 done; thread_id=11124
+fill_X_column_values for page index: 84 done; thread_id=11127
+fill_X_column_values for page index: 47 done; thread_id=11141
+fill_X_column_values for page index: 87 done; thread_id=11121
+fill_X_column_values for page index: 88 done; thread_id=11146
+fill_X_column_values for page index: 79 done; thread_id=11158
+fill_X_column_values for page index: 80 done; thread_id=11120
+fill_X_column_values for page index: 82 done; thread_id=11159
+fill_X_column_values for page index: 108 done; thread_id=11127
+fill_X_column_values for page index: 58 done; thread_id=11138
+fill_X_column_values for page index: 11 done; thread_id=11122
+fill_X_column_values for page index: 72 done; thread_id=11133
+fill_X_column_values for page index: 75 done; thread_id=11155
+fill_X_column_values for page index: 63 done; thread_id=11135
+fill_X_column_values for page index: 99 done; thread_id=11125
+fill_X_column_values for page index: 94 done; thread_id=11119
+fill_X_column_values for page index: 83 done; thread_id=11126
+fill_X_column_values for page index: 81 done; thread_id=11137
+fill_X_column_values for page index: 65 done; thread_id=11151
+fill_X_column_values for page index: 68 done; thread_id=11152
+fill_X_column_values for page index: 95 done; thread_id=11164
+fill_X_column_values for page index: 86 done; thread_id=11160
+fill_X_column_values for page index: 101 done; thread_id=11143
+fill_X_column_values for page index: 103 done; thread_id=11148
+fill_X_column_values for page index: 91 done; thread_id=11131
+fill_X_column_values for page index: 90 done; thread_id=11162
+fill_X_column_values for page index: 97 done; thread_id=11165
+fill_X_column_values for page index: 105 done; thread_id=11166
+fill_X_column_values for page index: 112 done; thread_id=11153
+fill_X_column_values for page index: 114 done; thread_id=11128
+fill_X_column_values for page index: 110 done; thread_id=11121
+fill_X_column_values for page index: 117 done; thread_id=11145
+fill_X_column_values for page index: 118 done; thread_id=11159
+fill_X_column_values for page index: 119 done; thread_id=11127
+fill_X_column_values for page index: 61 done; thread_id=11149
+fill_X_column_values for page index: 93 done; thread_id=11140
+fill_X_column_values for page index: 122 done; thread_id=11171
+fill_X_column_values for page index: 123 done; thread_id=11142
+fill_X_column_values for page index: 78 done; thread_id=11157
+fill_X_column_values for page index: 100 done; thread_id=11129
+fill_X_column_values for page index: 102 done; thread_id=11136
+fill_X_column_values for page index: 89 done; thread_id=11161
+fill_X_column_values for page index: 107 done; thread_id=11124
+fill_X_column_values for page index: 113 done; thread_id=11168
+fill_X_column_values for page index: 57 done; thread_id=11147
+fill_X_column_values for page index: 106 done; thread_id=11156
+fill_X_column_values for page index: 85 done; thread_id=11123
+fill_X_column_values for page index: 124 done; thread_id=11138
+fill_X_column_values for page index: 76 done; thread_id=11134
+fill_X_column_values for page index: 96 done; thread_id=11154
+fill_X_column_values for page index: 92 done; thread_id=11163
+fill_X_column_values for page index: 109 done; thread_id=11141
+fill_X_column_values for page index: 116 done; thread_id=11150
+fill_X_column_values for page index: 104 done; thread_id=11144
+fill_X_column_values for page index: 98 done; thread_id=11130
+fill_X_column_values for page index: 120 done; thread_id=11120
+fill_X_column_values for page index: 115 done; thread_id=11158
+fill_X_column_values for page index: 121 done; thread_id=11170
+fill_X_column_values for page index: 111 done; thread_id=11167
+iteration: 0; delta: 0.6638519424013793
+iteration: 1; delta: 0.2761548755224794
+iteration: 2; delta: 0.19147830168367364
+iteration: 3; delta: 0.14071792690083385
+iteration: 4; delta: 0.10540107138513122
+iteration: 5; delta: 0.07979395284201019
+iteration: 6; delta: 0.06090363167459145
+iteration: 7; delta: 0.046750269262702204
+iteration: 8; delta: 0.03602847966249101
+iteration: 9; delta: 0.027843184252560604
+iteration: 10; delta: 0.021560440898610977
+iteration: 11; delta: 0.016719154842576245
+iteration: 12; delta: 0.012978508671949385
+iteration: 13; delta: 0.010082380191306584
+iteration: 14; delta: 0.007837023704269086
+iteration: 15; delta: 0.00609432241981267
+iteration: 16; delta: 0.004740613007925276
+iteration: 17; delta: 0.003688585784402676
+iteration: 18; delta: 0.0028705903373520414
+iteration: 19; delta: 0.0022343740261021594
+iteration: 20; delta: 0.0017393420876032906
+iteration: 21; delta: 0.0013541390571845113
+iteration: 22; delta: 0.001054346349746993
+iteration: 23; delta: 0.0008210061961335668
+iteration: 24; delta: 0.0006393250464498124
+iteration: 25; delta: 0.0004979172972525703
+iteration: 26; delta: 0.00038770812079746975
+iteration: 27; delta: 0.0003019593164026446
+iteration: 28; delta: 0.00023519298252949739
+iteration: 29; delta: 0.00018318638660730358
+iteration: 30; delta: 0.00014268299761965864
+iteration: 31; delta: 0.00011111643473782351
+iteration: 32; delta: 8.657978932546939e-05
+iteration: 33; delta: 6.742683339666655e-05
+iteration: 34; delta: 5.257035368089191e-05
+iteration: 35; delta: 4.089494037629038e-05
+iteration: 36; delta: 3.186913860986351e-05
+iteration: 37; delta: 2.4824067970996566e-05
+iteration: 38; delta: 1.9311083789830263e-05
+iteration: 39; delta: 1.5092822135187589e-05
+iteration: 40; delta: 1.1761410192434596e-05
+iteration: 41; delta: 9.14826209807984e-06
+original_pagerank-multi_thread
+smallest memory usage: 356696 Bytes
+highest memory usage: 967299 Bytes
+0.18526077270507812 seconds

@@ -1,0 +1,205 @@
+%-------------------------------------------------------------------------------
+%                      Template Naskah Skripsi
+%               	Berdasarkan format JTETI FT UGM
+% 						(c) @gunturdputra 2014
+%-------------------------------------------------------------------------------
+
+%Template pembuatan naskah skripsi.
+\documentclass{jtetiskripsi}
+
+\renewcommand \thesection{\Alph{section}.}
+\renewcommand \thesubsection{\arabic{subsection}.}
+
+%Untuk prefiks pada daftar gambar dan tabel
+\usepackage[titles]{tocloft}
+\renewcommand\cftfigpresnum{Gambar\  }
+\renewcommand\cfttabpresnum{Tabel\   }
+
+%Untuk hyperlink dan table of content
+\usepackage[hidelinks]{hyperref}
+\newlength{\mylenf}
+\settowidth{\mylenf}{\cftfigpresnum}
+\setlength{\cftfignumwidth}{\dimexpr\mylenf+2em}
+\setlength{\cfttabnumwidth}{\dimexpr\mylenf+2em}
+
+%Untuk Bold Face pada Keterangan Gambar
+\usepackage[labelfont=bf]{caption}
+
+%Untuk caption dan subcaption
+\usepackage{caption}
+\usepackage{subcaption}
+
+%pdf
+\usepackage{pdfpages}
+
+%table
+\usepackage{graphics}
+
+\usepackage{wrapfig}
+
+%bibliography
+\usepackage{natbib}
+
+%equation
+\usepackage{amsmath}
+\allowdisplaybreaks
+
+%algoritma
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{pdfpages}
+\providecommand{\pgfsyspdfmark}[3]{}
+
+%listing
+\usepackage{listings, chngcntr}
+\lstset
+{ %Formatting for code in appendix
+    language=Matlab,
+    basicstyle=\footnotesize,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    breaklines=true,
+    breakatwhitespace=false,
+}
+\renewcommand{\lstlistingname}{Kode}
+\renewcommand{\lstlistlistingname}{DAFTAR KODE PEMROGRAMAN}
+\AtBeginDocument{
+    \counterwithout{lstlisting}{chapter}
+}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}
+
+\makeatletter
+\newenvironment{breakablealgorithm}
+{
+    \begin{center}
+        \refstepcounter{algorithm}
+        \renewcommand{\caption}[1]
+        {
+            \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}
+            \parbox{\textwidth}
+            % Makes a unbreakable block and can also be done by `minipage`.
+            {
+                \hrule height.8pt depth0pt \kern2pt
+                {\raggedright\textbf{\fname@algorithm~\thealgorithm} ##1\par}
+                \kern2pt\hrule\kern2pt
+            }
+        }
+}
+{
+        \kern2pt\hrule\relax
+    \end{center}
+}
+\makeatother
+
+\usepackage{enumitem}
+
+\usepackage{tocloft}
+\setlength\cftparskip{-2pt}
+\setlength\cftbeforechapskip{0pt}
+
+\usepackage{draftwatermark}
+\usepackage{tikz}
+\SetWatermarkText{\centering{\tikz{\node[opacity=0.1]{\includegraphics[width=0.8\paperwidth]{gambar/logo_unj_tanpa_text.png}};}}}
+\SetWatermarkAngle{0}
+\SetWatermarkScale{1}
+
+%-----------------------------------------------------------------
+%Disini awal masukan untuk data proposal skripsi
+%-----------------------------------------------------------------
+\titleind{Perbandingan Implementasi Algoritma-algoritma Pagerank pada Satu Mesin Komputer}
+
+\fullname{Farhan Herdian Pradana}
+
+\idnum{1313618030}
+
+\degree{Sarjana Ilmu Komputer}
+
+\yearsubmit{2023}
+
+\program{Ilmu Komputer}
+
+\dept{Ilmu Komputer}
+
+\firstsupervisor{Muhammad Eka Suryana, M. Kom.}
+\firstnip{198512232012121002}
+
+\secondsupervisor{Med Irzal, M.Kom.}
+\secondnip{197706152003121001}
+
+%-----------------------------------------------------------------
+%Disini akhir masukan untuk data proposal skripsi
+%-----------------------------------------------------------------
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\begin{document}
+
+\cover
+
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+%Disini akhir masukan untuk muka skripsi
+%-----------------------------------------------------------------
+
+\clearpage
+\addcontentsline{toc}{chapter}{LEMBAR PERNYATAAN}
+\includepdf{gambar/lembar_pernyataan.jpg}
+\addcontentsline{toc}{chapter}{HALAMAN PERSEMBAHAN}
+\include{halaman-persembahan}
+\addcontentsline{toc}{chapter}{KATA PENGANTAR}
+\include{kata-pengantar}
+\addcontentsline{toc}{chapter}{ABSTRAK}
+\include{abstrak}
+\addcontentsline{toc}{chapter}{\textit{ABSTRACT}}
+\include{abstract}
+\addcontentsline{toc}{chapter}{DAFTAR ISI}
+\tableofcontents
+\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+\listoffigures
+\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+\listoftables
+
+\begin{counterpage}
+\end{counterpage}
+%Disini awal masukan untuk Bab
+%-----------------------------------------------------------------
+\include{bab1}
+\include{bab2}
+\include{bab3}
+\include{bab4}
+\include{bab5}
+
+%-----------------------------------------------------------------
+%Disini akhir masukan Bab
+%-----------------------------------------------------------------
+
+
+%-----------------------------------------------------------------
+% Disini awal masukan untuk Daftar Pustaka
+% - Daftar pustaka diambil dari file .bib yang ada pada folder ini
+%   juga.
+% - Untuk memudahkan dalam memanajemen dan menggenerate file .bib
+%   gunakan reference manager seperti Mendeley, Zotero, EndNote,
+%   dll.
+%-----------------------------------------------------------------
+\bibliography{daftar-pustaka}
+\bibliographystyle{myapalike}
+\addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
+%-----------------------------------------------------------------
+%Disini akhir masukan Daftar Pustaka
+%-----------------------------------------------------------------
+
+\include{lampiran}
+\include{daftar-riwayat-hidup}
+\end{document}

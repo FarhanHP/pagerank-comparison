@@ -1,0 +1,45 @@
+\babel@toc {bahasa}{}\relax 
+\babel@toc {bahasa}{}\relax 
+\babel@toc {bahasa}{}\relax 
+\addvspace {10\p@ }
+\babel@toc {bahasa}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Gambar sebuah web yang terdiri atas kumpulan \textit {link} dan indeks \citep {bernersLee1992}\relax }}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Gambar arsitektur WWW \textit {link} dan indeks \citep {bernersLee1992}\relax }}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \emph {High Level Google Architecture} \citep {brin1998anatomy}\relax }}{14}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Pangsa pasar \textit {search engine} \citep {gsc2022marketshare}\relax }}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Contoh graf \citep {wilson1996}\relax }}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Contoh peta jalan yang dapat diandaikan sebagai graf \citep {wilson1996}\relax }}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces \relax }}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Contoh digraf \citep {wilson1996}\relax }}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Contoh digraf sederhana \citep {wilson1996}\relax }}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces A dan B adalah \textit {backlink} dari C \citep {ilprints422}\relax }}{19}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces \relax }}{27}{figure.caption.17}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram tahapan penelitian\relax }}{35}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \textit {Class Diagram} dari \textit {class} Cache dan turunannya\relax }}{52}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \textit {Class Diagram} dari \textit {class} DB dan \textit {class} lain yang memiliki dependensi terhadapnya\relax }}{53}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \textit {Class Diagram} dari \textit {class} PageInformationClusterizer\relax }}{54}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagram alir ketika membentuk matriks transisi $P$ di \textit {class} PHelper\relax }}{55}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagram alir dari program Pagerank\relax }}{56}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \textit {Class Diagram} PHelper\relax }}{57}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \textit {Class Diagram} ClusterSeparatedPhiHelper\relax }}{59}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \textit {Class Diagram} ExtendedLocalTransitionMatrixHelper\relax }}{59}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces \textit {Class Diagram} PWithCacheHelper\relax }}{60}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagram alir PWithCacheHelper\relax }}{60}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces \textit {Class Diagram} PartitionedPHelper\relax }}{61}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \textit {Class Diagram} PastiHelper\relax }}{61}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces \textit {Class Diagram} PiastHelper\relax }}{61}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \textit {Class Diagram} RPHelper\relax }}{62}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces \textit {Class Diagram} DPCExecutor\relax }}{63}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Diagram alir \textit {run\_dpc.py}\relax }}{65}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Diagram alir DPCExecutor\relax }}{66}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces \textit {Class Diagram} AHelper\relax }}{67}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces \textit {Class Diagram} ModifiedDPCExecutorV2\relax }}{68}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Diagram alir program MDPC\relax }}{69}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces \textit {Class Diagram} RandomWalkerExecutor\relax }}{70}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces \textit {Class Diagram} NodesHelper\relax }}{71}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces \textit {Class Diagram} PageInformationsHelper\relax }}{71}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Diagram alir program Random Walker\relax }}{72}{figure.caption.55}%
+\addvspace {10\p@ }

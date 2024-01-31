@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>cache API documentation</title>
+<meta name="description" content="this package contain Cache classes that act as intermediary between the program and pickle library" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Package <code>cache</code></h1>
+</header>
+<section id="section-intro">
+<p>this package contain Cache classes that act as intermediary between the program and pickle library</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+this package contain Cache classes that act as intermediary between the program and pickle library
+&#34;&#34;&#34;
+
+from pickle import dump, load
+from numpy.typing import NDArray
+from numpy import float_
+from typing import Any
+
+class Cache:
+  &#34;&#34;&#34;
+  Properties:
+    - folder_path: .pkl file folder that store .pkl files
+
+  Methods:
+    - private create_file(self, file_name: str) -&gt; str
+        - create .pkl file
+
+    - protected dump(self, file_name: str, obj: Any)
+        - dump object into .pkl file
+
+    - protected load(self, file_name: str) -&gt; Any
+        - load .pkl file into python object
+  &#34;&#34;&#34;
+
+  __folder_path: str
+
+  def __init__(self, folder_path: str) -&gt; None:
+    self.__folder_path = folder_path
+
+  def __create_file(self, file_name: str) -&gt; str:
+    file_location = f&#34;{self.__folder_path}/{file_name}&#34;
+
+    try:
+      open(file_location, &#34;x&#34;).close()
+    except FileExistsError:
+      pass
+    finally:
+      return file_location
+
+  def _dump(self, file_name: str, obj: Any):
+    file_location = self.__create_file(file_name)
+    with open(file_location, &#34;wb&#34;) as file_write:
+      dump(obj, file_write)
+
+  def _load(self, file_name: str) -&gt; Any:
+    file_location = f&#34;{self.__folder_path}/{file_name}&#34;
+    
+    try:
+      with open(file_location, &#34;rb&#34;) as file_open:
+        return load(file_open)
+    except FileNotFoundError:
+      return None
+
+class PCache(Cache):
+  &#34;&#34;&#34;
+  caching for P matrix
+  
+  Properties:
+    - file_name: .pkl file name format
+  &#34;&#34;&#34;
+
+  __file_name = &#34;col_{}.pkl&#34;
+
+  def dump_column(self, col_index: int, column: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump matrix P by its column into .pkl file / cache
+    
+    Args:
+      - col_index: column index of matrix P
+      - column: N x 1 vector of matrix P column
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name.format(str(col_index)), column)
+
+
+  def load_column(self, col_index: int) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load P matrix column from .pkl file / cache
+
+    Args:
+      - col_index: column index of matrix P
+    
+    Returns:
+      - N x 1 P column vector
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name.format(str(col_index)))
+
+class QListCache(Cache):
+  &#34;&#34;&#34;
+  caching for Q matrix
+
+  Properties:
+    - file_name: .pkl file name format
+  &#34;&#34;&#34;
+
+  __file_name = &#34;Q_{}.pkl&#34;
+
+  def dump_q(self, cluster_no: int, q: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump Ni x Ni matrix Qi into .pkl file / cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Qi
+      - q: Qi matrix
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name.format(cluster_no), q)
+
+  def load_q(self, cluster_no: int) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load Ni x Ni matrix Qi from .pkl file / cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Qi
+
+    Returns:
+      Ni x Ni Qi matrix
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name.format(cluster_no))
+
+class PiiListCache(Cache):
+  &#34;&#34;&#34;
+  caching for Pii matrix
+
+  Properties:
+    - file_name: .pkl file name format
+  &#34;&#34;&#34;
+
+  __file_name = &#34;P_{}{}.pkl&#34;
+
+  def dump_pii(self, cluster_no: int, pii: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump Ni x Ni matrix Pii into cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Pii
+      - pii: Pii matrix
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name.format(cluster_no, cluster_no), pii)
+
+  def load_pii(self, cluster_no: int) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load Ni x Ni matrix Pii from cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Pii
+
+    Returns:
+      Ni x Ni matrix Pii
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name.format(cluster_no, cluster_no))
+
+class PiastListCache(Cache):
+  &#34;&#34;&#34;
+  caching for Pi* (Pi-ast) matrix
+
+  Properties:
+    - file_name: .pkl file name format
+  &#34;&#34;&#34;
+
+  __file_name = &#34;P_{}_ast.pkl&#34;
+
+  def dump_piast(self, cluster_no: int, piast: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump Ni x N matrix Pi* into cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Pi*
+      - piast: Pi* matrix
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name.format(cluster_no), piast)
+
+  def load_piast(self, cluster_no: int) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load Ni x N matrix Pi*  from cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Pi*
+
+    Returns:
+      Ni x N matrix Pi* 
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name.format(cluster_no))
+
+class PastiListCache(Cache):
+  &#34;&#34;&#34;
+  caching for P*i (Past-i) matrix
+
+  Properties:
+    - file_name: .pkl file name format
+  &#34;&#34;&#34;
+
+  __file_name = &#34;P_ast_{}.pkl&#34;
+
+  def dump_pasti(self, cluster_no: int, pasti: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump N x Ni matrix P*i into cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in P*i
+      - pasti: P*i matrix
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name.format(cluster_no), pasti)
+
+  def load_pasti(self, cluster_no: int) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load N x Ni matrix P*i from cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in P*i
+    
+    Returns:
+      N x Ni matrix P*i
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name.format(cluster_no))
+  
+class RPCache(Cache):
+  &#34;&#34;&#34;
+  caching for RP matrix
+
+  Properties:
+    - file_name: .pkl file name
+  &#34;&#34;&#34;
+
+  __file_name = &#34;RP.pkl&#34;
+
+  def dump_rp(self, rp: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump RP matrix into cache
+
+    Args:
+      - rp: RP matrix
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name, rp)
+
+  def load_rp(self) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load RP matrix from cache
+
+    Returns:
+      RP matrix
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="cache.Cache"><code class="flex name class">
+<span>class <span class="ident">Cache</span></span>
+<span>(</span><span>folder_path: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="properties">Properties</h2>
+<ul>
+<li>folder_path: .pkl file folder that store .pkl files</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li>
+<p>private create_file(self, file_name: str) -&gt; str</p>
+<ul>
+<li>create .pkl file</li>
+</ul>
+</li>
+<li>
+<p>protected dump(self, file_name: str, obj: Any)</p>
+<ul>
+<li>dump object into .pkl file</li>
+</ul>
+</li>
+<li>
+<p>protected load(self, file_name: str) -&gt; Any</p>
+<ul>
+<li>load .pkl file into python object</li>
+</ul>
+</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Cache:
+  &#34;&#34;&#34;
+  Properties:
+    - folder_path: .pkl file folder that store .pkl files
+
+  Methods:
+    - private create_file(self, file_name: str) -&gt; str
+        - create .pkl file
+
+    - protected dump(self, file_name: str, obj: Any)
+        - dump object into .pkl file
+
+    - protected load(self, file_name: str) -&gt; Any
+        - load .pkl file into python object
+  &#34;&#34;&#34;
+
+  __folder_path: str
+
+  def __init__(self, folder_path: str) -&gt; None:
+    self.__folder_path = folder_path
+
+  def __create_file(self, file_name: str) -&gt; str:
+    file_location = f&#34;{self.__folder_path}/{file_name}&#34;
+
+    try:
+      open(file_location, &#34;x&#34;).close()
+    except FileExistsError:
+      pass
+    finally:
+      return file_location
+
+  def _dump(self, file_name: str, obj: Any):
+    file_location = self.__create_file(file_name)
+    with open(file_location, &#34;wb&#34;) as file_write:
+      dump(obj, file_write)
+
+  def _load(self, file_name: str) -&gt; Any:
+    file_location = f&#34;{self.__folder_path}/{file_name}&#34;
+    
+    try:
+      with open(file_location, &#34;rb&#34;) as file_open:
+        return load(file_open)
+    except FileNotFoundError:
+      return None</code></pre>
+</details>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li><a title="cache.PCache" href="#cache.PCache">PCache</a></li>
+<li><a title="cache.PastiListCache" href="#cache.PastiListCache">PastiListCache</a></li>
+<li><a title="cache.PiastListCache" href="#cache.PiastListCache">PiastListCache</a></li>
+<li><a title="cache.PiiListCache" href="#cache.PiiListCache">PiiListCache</a></li>
+<li><a title="cache.QListCache" href="#cache.QListCache">QListCache</a></li>
+<li><a title="cache.RPCache" href="#cache.RPCache">RPCache</a></li>
+</ul>
+</dd>
+<dt id="cache.PCache"><code class="flex name class">
+<span>class <span class="ident">PCache</span></span>
+<span>(</span><span>folder_path: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>caching for P matrix</p>
+<h2 id="properties">Properties</h2>
+<ul>
+<li>file_name: .pkl file name format</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class PCache(Cache):
+  &#34;&#34;&#34;
+  caching for P matrix
+  
+  Properties:
+    - file_name: .pkl file name format
+  &#34;&#34;&#34;
+
+  __file_name = &#34;col_{}.pkl&#34;
+
+  def dump_column(self, col_index: int, column: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump matrix P by its column into .pkl file / cache
+    
+    Args:
+      - col_index: column index of matrix P
+      - column: N x 1 vector of matrix P column
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name.format(str(col_index)), column)
+
+
+  def load_column(self, col_index: int) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load P matrix column from .pkl file / cache
+
+    Args:
+      - col_index: column index of matrix P
+    
+    Returns:
+      - N x 1 P column vector
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name.format(str(col_index)))</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="cache.Cache" href="#cache.Cache">Cache</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="cache.PCache.dump_column"><code class="name flex">
+<span>def <span class="ident">dump_column</span></span>(<span>self, col_index: int, column: numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>dump matrix P by its column into .pkl file / cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>col_index: column index of matrix P</li>
+<li>column: N x 1 vector of matrix P column</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def dump_column(self, col_index: int, column: NDArray[float_]):
+  &#34;&#34;&#34;
+  dump matrix P by its column into .pkl file / cache
+  
+  Args:
+    - col_index: column index of matrix P
+    - column: N x 1 vector of matrix P column
+  &#34;&#34;&#34;
+
+  self._dump(self.__file_name.format(str(col_index)), column)</code></pre>
+</details>
+</dd>
+<dt id="cache.PCache.load_column"><code class="name flex">
+<span>def <span class="ident">load_column</span></span>(<span>self, col_index: int) ‑> numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>load P matrix column from .pkl file / cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>col_index: column index of matrix P</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<ul>
+<li>N x 1 P column vector</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_column(self, col_index: int) -&gt; NDArray[float_]:
+  &#34;&#34;&#34;
+  load P matrix column from .pkl file / cache
+
+  Args:
+    - col_index: column index of matrix P
+  
+  Returns:
+    - N x 1 P column vector
+  &#34;&#34;&#34;
+
+  return self._load(self.__file_name.format(str(col_index)))</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="cache.PastiListCache"><code class="flex name class">
+<span>class <span class="ident">PastiListCache</span></span>
+<span>(</span><span>folder_path: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>caching for P*i (Past-i) matrix</p>
+<h2 id="properties">Properties</h2>
+<ul>
+<li>file_name: .pkl file name format</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class PastiListCache(Cache):
+  &#34;&#34;&#34;
+  caching for P*i (Past-i) matrix
+
+  Properties:
+    - file_name: .pkl file name format
+  &#34;&#34;&#34;
+
+  __file_name = &#34;P_ast_{}.pkl&#34;
+
+  def dump_pasti(self, cluster_no: int, pasti: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump N x Ni matrix P*i into cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in P*i
+      - pasti: P*i matrix
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name.format(cluster_no), pasti)
+
+  def load_pasti(self, cluster_no: int) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load N x Ni matrix P*i from cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in P*i
+    
+    Returns:
+      N x Ni matrix P*i
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name.format(cluster_no))</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="cache.Cache" href="#cache.Cache">Cache</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="cache.PastiListCache.dump_pasti"><code class="name flex">
+<span>def <span class="ident">dump_pasti</span></span>(<span>self, cluster_no: int, pasti: numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>dump N x Ni matrix P*i into cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>cluster_no: "i" number in P*i</li>
+<li>pasti: P*i matrix</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def dump_pasti(self, cluster_no: int, pasti: NDArray[float_]):
+  &#34;&#34;&#34;
+  dump N x Ni matrix P*i into cache
+
+  Args:
+    - cluster_no: &#34;i&#34; number in P*i
+    - pasti: P*i matrix
+  &#34;&#34;&#34;
+
+  self._dump(self.__file_name.format(cluster_no), pasti)</code></pre>
+</details>
+</dd>
+<dt id="cache.PastiListCache.load_pasti"><code class="name flex">
+<span>def <span class="ident">load_pasti</span></span>(<span>self, cluster_no: int) ‑> numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>load N x Ni matrix P*i from cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>cluster_no: "i" number in P*i</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>N x Ni matrix P*i</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_pasti(self, cluster_no: int) -&gt; NDArray[float_]:
+  &#34;&#34;&#34;
+  load N x Ni matrix P*i from cache
+
+  Args:
+    - cluster_no: &#34;i&#34; number in P*i
+  
+  Returns:
+    N x Ni matrix P*i
+  &#34;&#34;&#34;
+
+  return self._load(self.__file_name.format(cluster_no))</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="cache.PiastListCache"><code class="flex name class">
+<span>class <span class="ident">PiastListCache</span></span>
+<span>(</span><span>folder_path: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>caching for Pi* (Pi-ast) matrix</p>
+<h2 id="properties">Properties</h2>
+<ul>
+<li>file_name: .pkl file name format</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class PiastListCache(Cache):
+  &#34;&#34;&#34;
+  caching for Pi* (Pi-ast) matrix
+
+  Properties:
+    - file_name: .pkl file name format
+  &#34;&#34;&#34;
+
+  __file_name = &#34;P_{}_ast.pkl&#34;
+
+  def dump_piast(self, cluster_no: int, piast: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump Ni x N matrix Pi* into cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Pi*
+      - piast: Pi* matrix
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name.format(cluster_no), piast)
+
+  def load_piast(self, cluster_no: int) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load Ni x N matrix Pi*  from cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Pi*
+
+    Returns:
+      Ni x N matrix Pi* 
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name.format(cluster_no))</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="cache.Cache" href="#cache.Cache">Cache</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="cache.PiastListCache.dump_piast"><code class="name flex">
+<span>def <span class="ident">dump_piast</span></span>(<span>self, cluster_no: int, piast: numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>dump Ni x N matrix Pi* into cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>cluster_no: "i" number in Pi*</li>
+<li>piast: Pi* matrix</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def dump_piast(self, cluster_no: int, piast: NDArray[float_]):
+  &#34;&#34;&#34;
+  dump Ni x N matrix Pi* into cache
+
+  Args:
+    - cluster_no: &#34;i&#34; number in Pi*
+    - piast: Pi* matrix
+  &#34;&#34;&#34;
+
+  self._dump(self.__file_name.format(cluster_no), piast)</code></pre>
+</details>
+</dd>
+<dt id="cache.PiastListCache.load_piast"><code class="name flex">
+<span>def <span class="ident">load_piast</span></span>(<span>self, cluster_no: int) ‑> numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>load Ni x N matrix Pi*
+from cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>cluster_no: "i" number in Pi*</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>Ni x N matrix Pi*</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_piast(self, cluster_no: int) -&gt; NDArray[float_]:
+  &#34;&#34;&#34;
+  load Ni x N matrix Pi*  from cache
+
+  Args:
+    - cluster_no: &#34;i&#34; number in Pi*
+
+  Returns:
+    Ni x N matrix Pi* 
+  &#34;&#34;&#34;
+
+  return self._load(self.__file_name.format(cluster_no))</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="cache.PiiListCache"><code class="flex name class">
+<span>class <span class="ident">PiiListCache</span></span>
+<span>(</span><span>folder_path: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>caching for Pii matrix</p>
+<h2 id="properties">Properties</h2>
+<ul>
+<li>file_name: .pkl file name format</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class PiiListCache(Cache):
+  &#34;&#34;&#34;
+  caching for Pii matrix
+
+  Properties:
+    - file_name: .pkl file name format
+  &#34;&#34;&#34;
+
+  __file_name = &#34;P_{}{}.pkl&#34;
+
+  def dump_pii(self, cluster_no: int, pii: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump Ni x Ni matrix Pii into cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Pii
+      - pii: Pii matrix
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name.format(cluster_no, cluster_no), pii)
+
+  def load_pii(self, cluster_no: int) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load Ni x Ni matrix Pii from cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Pii
+
+    Returns:
+      Ni x Ni matrix Pii
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name.format(cluster_no, cluster_no))</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="cache.Cache" href="#cache.Cache">Cache</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="cache.PiiListCache.dump_pii"><code class="name flex">
+<span>def <span class="ident">dump_pii</span></span>(<span>self, cluster_no: int, pii: numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>dump Ni x Ni matrix Pii into cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>cluster_no: "i" number in Pii</li>
+<li>pii: Pii matrix</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def dump_pii(self, cluster_no: int, pii: NDArray[float_]):
+  &#34;&#34;&#34;
+  dump Ni x Ni matrix Pii into cache
+
+  Args:
+    - cluster_no: &#34;i&#34; number in Pii
+    - pii: Pii matrix
+  &#34;&#34;&#34;
+
+  self._dump(self.__file_name.format(cluster_no, cluster_no), pii)</code></pre>
+</details>
+</dd>
+<dt id="cache.PiiListCache.load_pii"><code class="name flex">
+<span>def <span class="ident">load_pii</span></span>(<span>self, cluster_no: int) ‑> numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>load Ni x Ni matrix Pii from cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>cluster_no: "i" number in Pii</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>Ni x Ni matrix Pii</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_pii(self, cluster_no: int) -&gt; NDArray[float_]:
+  &#34;&#34;&#34;
+  load Ni x Ni matrix Pii from cache
+
+  Args:
+    - cluster_no: &#34;i&#34; number in Pii
+
+  Returns:
+    Ni x Ni matrix Pii
+  &#34;&#34;&#34;
+
+  return self._load(self.__file_name.format(cluster_no, cluster_no))</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="cache.QListCache"><code class="flex name class">
+<span>class <span class="ident">QListCache</span></span>
+<span>(</span><span>folder_path: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>caching for Q matrix</p>
+<h2 id="properties">Properties</h2>
+<ul>
+<li>file_name: .pkl file name format</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class QListCache(Cache):
+  &#34;&#34;&#34;
+  caching for Q matrix
+
+  Properties:
+    - file_name: .pkl file name format
+  &#34;&#34;&#34;
+
+  __file_name = &#34;Q_{}.pkl&#34;
+
+  def dump_q(self, cluster_no: int, q: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump Ni x Ni matrix Qi into .pkl file / cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Qi
+      - q: Qi matrix
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name.format(cluster_no), q)
+
+  def load_q(self, cluster_no: int) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load Ni x Ni matrix Qi from .pkl file / cache
+
+    Args:
+      - cluster_no: &#34;i&#34; number in Qi
+
+    Returns:
+      Ni x Ni Qi matrix
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name.format(cluster_no))</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="cache.Cache" href="#cache.Cache">Cache</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="cache.QListCache.dump_q"><code class="name flex">
+<span>def <span class="ident">dump_q</span></span>(<span>self, cluster_no: int, q: numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>dump Ni x Ni matrix Qi into .pkl file / cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>cluster_no: "i" number in Qi</li>
+<li>q: Qi matrix</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def dump_q(self, cluster_no: int, q: NDArray[float_]):
+  &#34;&#34;&#34;
+  dump Ni x Ni matrix Qi into .pkl file / cache
+
+  Args:
+    - cluster_no: &#34;i&#34; number in Qi
+    - q: Qi matrix
+  &#34;&#34;&#34;
+
+  self._dump(self.__file_name.format(cluster_no), q)</code></pre>
+</details>
+</dd>
+<dt id="cache.QListCache.load_q"><code class="name flex">
+<span>def <span class="ident">load_q</span></span>(<span>self, cluster_no: int) ‑> numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>load Ni x Ni matrix Qi from .pkl file / cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>cluster_no: "i" number in Qi</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>Ni x Ni Qi matrix</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_q(self, cluster_no: int) -&gt; NDArray[float_]:
+  &#34;&#34;&#34;
+  load Ni x Ni matrix Qi from .pkl file / cache
+
+  Args:
+    - cluster_no: &#34;i&#34; number in Qi
+
+  Returns:
+    Ni x Ni Qi matrix
+  &#34;&#34;&#34;
+
+  return self._load(self.__file_name.format(cluster_no))</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="cache.RPCache"><code class="flex name class">
+<span>class <span class="ident">RPCache</span></span>
+<span>(</span><span>folder_path: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>caching for RP matrix</p>
+<h2 id="properties">Properties</h2>
+<ul>
+<li>file_name: .pkl file name</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class RPCache(Cache):
+  &#34;&#34;&#34;
+  caching for RP matrix
+
+  Properties:
+    - file_name: .pkl file name
+  &#34;&#34;&#34;
+
+  __file_name = &#34;RP.pkl&#34;
+
+  def dump_rp(self, rp: NDArray[float_]):
+    &#34;&#34;&#34;
+    dump RP matrix into cache
+
+    Args:
+      - rp: RP matrix
+    &#34;&#34;&#34;
+
+    self._dump(self.__file_name, rp)
+
+  def load_rp(self) -&gt; NDArray[float_]:
+    &#34;&#34;&#34;
+    load RP matrix from cache
+
+    Returns:
+      RP matrix
+    &#34;&#34;&#34;
+
+    return self._load(self.__file_name)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="cache.Cache" href="#cache.Cache">Cache</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="cache.RPCache.dump_rp"><code class="name flex">
+<span>def <span class="ident">dump_rp</span></span>(<span>self, rp: numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>dump RP matrix into cache</p>
+<h2 id="args">Args</h2>
+<ul>
+<li>rp: RP matrix</li>
+</ul></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def dump_rp(self, rp: NDArray[float_]):
+  &#34;&#34;&#34;
+  dump RP matrix into cache
+
+  Args:
+    - rp: RP matrix
+  &#34;&#34;&#34;
+
+  self._dump(self.__file_name, rp)</code></pre>
+</details>
+</dd>
+<dt id="cache.RPCache.load_rp"><code class="name flex">
+<span>def <span class="ident">load_rp</span></span>(<span>self) ‑> numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>load RP matrix from cache</p>
+<h2 id="returns">Returns</h2>
+<p>RP matrix</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_rp(self) -&gt; NDArray[float_]:
+  &#34;&#34;&#34;
+  load RP matrix from cache
+
+  Returns:
+    RP matrix
+  &#34;&#34;&#34;
+
+  return self._load(self.__file_name)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="cache.Cache" href="#cache.Cache">Cache</a></code></h4>
+</li>
+<li>
+<h4><code><a title="cache.PCache" href="#cache.PCache">PCache</a></code></h4>
+<ul class="">
+<li><code><a title="cache.PCache.dump_column" href="#cache.PCache.dump_column">dump_column</a></code></li>
+<li><code><a title="cache.PCache.load_column" href="#cache.PCache.load_column">load_column</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="cache.PastiListCache" href="#cache.PastiListCache">PastiListCache</a></code></h4>
+<ul class="">
+<li><code><a title="cache.PastiListCache.dump_pasti" href="#cache.PastiListCache.dump_pasti">dump_pasti</a></code></li>
+<li><code><a title="cache.PastiListCache.load_pasti" href="#cache.PastiListCache.load_pasti">load_pasti</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="cache.PiastListCache" href="#cache.PiastListCache">PiastListCache</a></code></h4>
+<ul class="">
+<li><code><a title="cache.PiastListCache.dump_piast" href="#cache.PiastListCache.dump_piast">dump_piast</a></code></li>
+<li><code><a title="cache.PiastListCache.load_piast" href="#cache.PiastListCache.load_piast">load_piast</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="cache.PiiListCache" href="#cache.PiiListCache">PiiListCache</a></code></h4>
+<ul class="">
+<li><code><a title="cache.PiiListCache.dump_pii" href="#cache.PiiListCache.dump_pii">dump_pii</a></code></li>
+<li><code><a title="cache.PiiListCache.load_pii" href="#cache.PiiListCache.load_pii">load_pii</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="cache.QListCache" href="#cache.QListCache">QListCache</a></code></h4>
+<ul class="">
+<li><code><a title="cache.QListCache.dump_q" href="#cache.QListCache.dump_q">dump_q</a></code></li>
+<li><code><a title="cache.QListCache.load_q" href="#cache.QListCache.load_q">load_q</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="cache.RPCache" href="#cache.RPCache">RPCache</a></code></h4>
+<ul class="">
+<li><code><a title="cache.RPCache.dump_rp" href="#cache.RPCache.dump_rp">dump_rp</a></code></li>
+<li><code><a title="cache.RPCache.load_rp" href="#cache.RPCache.load_rp">load_rp</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

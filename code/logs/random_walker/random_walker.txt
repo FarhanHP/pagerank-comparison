@@ -1,0 +1,1011 @@
+iteration-19 for page index 20349 done;
+smallest memory usage: 3372044713 Bytes
+highest memory usage: 3372757270 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20350 done;
+smallest memory usage: 3372049965 Bytes
+highest memory usage: 3372757242 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20351 done;
+smallest memory usage: 3372049937 Bytes
+highest memory usage: 3372762494 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20352 done;
+smallest memory usage: 3372049909 Bytes
+highest memory usage: 3372762466 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20353 done;
+smallest memory usage: 3372049881 Bytes
+highest memory usage: 3372762438 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20354 done;
+smallest memory usage: 3372049853 Bytes
+highest memory usage: 3372762410 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20355 done;
+smallest memory usage: 3372049825 Bytes
+highest memory usage: 3372762382 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20356 done;
+smallest memory usage: 3372049797 Bytes
+highest memory usage: 3372762354 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20357 done;
+smallest memory usage: 3372049769 Bytes
+highest memory usage: 3372762326 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20358 done;
+smallest memory usage: 3372049741 Bytes
+highest memory usage: 3372762298 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20359 done;
+smallest memory usage: 3372049713 Bytes
+highest memory usage: 3372762270 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20360 done;
+smallest memory usage: 3372049685 Bytes
+highest memory usage: 3372762242 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20361 done;
+smallest memory usage: 3372049657 Bytes
+highest memory usage: 3372762214 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20362 done;
+smallest memory usage: 3372049629 Bytes
+highest memory usage: 3372762186 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20363 done;
+smallest memory usage: 3372049601 Bytes
+highest memory usage: 3372762158 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20364 done;
+smallest memory usage: 3372044293 Bytes
+highest memory usage: 3372756850 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20365 done;
+smallest memory usage: 3372044265 Bytes
+highest memory usage: 3372751542 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20366 done;
+smallest memory usage: 3372044237 Bytes
+highest memory usage: 3372751514 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20367 done;
+smallest memory usage: 3372279665 Bytes
+highest memory usage: 3372986942 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20368 done;
+smallest memory usage: 3372044181 Bytes
+highest memory usage: 3372986914 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20369 done;
+smallest memory usage: 3372044153 Bytes
+highest memory usage: 3372751430 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20370 done;
+smallest memory usage: 3372044125 Bytes
+highest memory usage: 3372751402 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20371 done;
+smallest memory usage: 3372049377 Bytes
+highest memory usage: 3372756654 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20372 done;
+smallest memory usage: 3372049349 Bytes
+highest memory usage: 3372761906 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20373 done;
+smallest memory usage: 3372049321 Bytes
+highest memory usage: 3372761878 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20374 done;
+smallest memory usage: 3372055213 Bytes
+highest memory usage: 3372767770 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20375 done;
+smallest memory usage: 3372049265 Bytes
+highest memory usage: 3372767742 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20376 done;
+smallest memory usage: 3372055157 Bytes
+highest memory usage: 3372767714 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20377 done;
+smallest memory usage: 3372055129 Bytes
+highest memory usage: 3372773606 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20378 done;
+smallest memory usage: 3372049181 Bytes
+highest memory usage: 3372767658 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20379 done;
+smallest memory usage: 3372049153 Bytes
+highest memory usage: 3372761710 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20380 done;
+smallest memory usage: 3372049125 Bytes
+highest memory usage: 3372761682 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20381 done;
+smallest memory usage: 3372049097 Bytes
+highest memory usage: 3372761654 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20382 done;
+smallest memory usage: 3372049069 Bytes
+highest memory usage: 3372761626 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20383 done;
+smallest memory usage: 3372049041 Bytes
+highest memory usage: 3372761598 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20384 done;
+smallest memory usage: 3372049013 Bytes
+highest memory usage: 3372761570 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20385 done;
+smallest memory usage: 3372048985 Bytes
+highest memory usage: 3372761542 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20386 done;
+smallest memory usage: 3372048957 Bytes
+highest memory usage: 3372761514 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20387 done;
+smallest memory usage: 3372048929 Bytes
+highest memory usage: 3372761486 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20388 done;
+smallest memory usage: 3372048901 Bytes
+highest memory usage: 3372761458 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20389 done;
+smallest memory usage: 3372048873 Bytes
+highest memory usage: 3372761430 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20390 done;
+smallest memory usage: 3372048845 Bytes
+highest memory usage: 3372761402 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20391 done;
+smallest memory usage: 3372048817 Bytes
+highest memory usage: 3372761374 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20392 done;
+smallest memory usage: 3372048789 Bytes
+highest memory usage: 3372761346 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20393 done;
+smallest memory usage: 3372048761 Bytes
+highest memory usage: 3372761318 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20394 done;
+smallest memory usage: 3372048733 Bytes
+highest memory usage: 3372761290 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20395 done;
+smallest memory usage: 3372054625 Bytes
+highest memory usage: 3372767182 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20396 done;
+smallest memory usage: 3372086693 Bytes
+highest memory usage: 3372805170 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20397 done;
+smallest memory usage: 3372034537 Bytes
+highest memory usage: 3372785110 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20398 done;
+smallest memory usage: 3372278797 Bytes
+highest memory usage: 3372977242 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20399 done;
+smallest memory usage: 3374056945 Bytes
+highest memory usage: 3374999678 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20400 done;
+smallest memory usage: 3372563893 Bytes
+highest memory usage: 3375284802 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20401 done;
+smallest memory usage: 3372713337 Bytes
+highest memory usage: 3373941222 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20402 done;
+smallest memory usage: 3372634173 Bytes
+highest memory usage: 3374011530 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20403 done;
+smallest memory usage: 3372196001 Bytes
+highest memory usage: 3373494222 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20404 done;
+smallest memory usage: 3372313317 Bytes
+highest memory usage: 3373173394 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20405 done;
+smallest memory usage: 3372195945 Bytes
+highest memory usage: 3373173366 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20406 done;
+smallest memory usage: 3372313261 Bytes
+highest memory usage: 3373173338 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20407 done;
+smallest memory usage: 3372068433 Bytes
+highest memory usage: 3373045854 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20408 done;
+smallest memory usage: 3372048341 Bytes
+highest memory usage: 3372780962 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20409 done;
+smallest memory usage: 3372802137 Bytes
+highest memory usage: 3373514694 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20410 done;
+smallest memory usage: 3372563613 Bytes
+highest memory usage: 3374029994 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20411 done;
+smallest memory usage: 3372096961 Bytes
+highest memory usage: 3373324846 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20412 done;
+smallest memory usage: 3372060805 Bytes
+highest memory usage: 3372822066 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20413 done;
+smallest memory usage: 3372563529 Bytes
+highest memory usage: 3373288662 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20414 done;
+smallest memory usage: 3372108909 Bytes
+highest memory usage: 3373336794 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20415 done;
+smallest memory usage: 3372154737 Bytes
+highest memory usage: 3372928030 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20416 done;
+smallest memory usage: 3372086133 Bytes
+highest memory usage: 3372905282 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20417 done;
+smallest memory usage: 3372048089 Bytes
+highest memory usage: 3372798662 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20418 done;
+smallest memory usage: 3372122333 Bytes
+highest memory usage: 3372834890 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20419 done;
+smallest memory usage: 3372068097 Bytes
+highest memory usage: 3372854926 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20420 done;
+smallest memory usage: 3372048005 Bytes
+highest memory usage: 3372780626 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20421 done;
+smallest memory usage: 3372047977 Bytes
+highest memory usage: 3372760534 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20422 done;
+smallest memory usage: 3372047949 Bytes
+highest memory usage: 3372760506 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20423 done;
+smallest memory usage: 3372047921 Bytes
+highest memory usage: 3372760478 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20424 done;
+smallest memory usage: 3372047893 Bytes
+highest memory usage: 3372760450 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20425 done;
+smallest memory usage: 3372042585 Bytes
+highest memory usage: 3372755142 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20426 done;
+smallest memory usage: 3372278013 Bytes
+highest memory usage: 3372985290 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20427 done;
+smallest memory usage: 3372277985 Bytes
+highest memory usage: 3373220718 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20428 done;
+smallest memory usage: 3372277957 Bytes
+highest memory usage: 3373220690 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20429 done;
+smallest memory usage: 3372047753 Bytes
+highest memory usage: 3372990486 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20430 done;
+smallest memory usage: 3372047725 Bytes
+highest memory usage: 3372760282 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20431 done;
+smallest memory usage: 3372047697 Bytes
+highest memory usage: 3372760254 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20432 done;
+smallest memory usage: 3372060245 Bytes
+highest memory usage: 3372772802 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20433 done;
+smallest memory usage: 3372060217 Bytes
+highest memory usage: 3372785350 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20434 done;
+smallest memory usage: 3372060189 Bytes
+highest memory usage: 3372785322 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20435 done;
+smallest memory usage: 3372444801 Bytes
+highest memory usage: 3373169934 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20436 done;
+smallest memory usage: 3372067621 Bytes
+highest memory usage: 3373177394 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20437 done;
+smallest memory usage: 3372060105 Bytes
+highest memory usage: 3372792726 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20438 done;
+smallest memory usage: 3372042221 Bytes
+highest memory usage: 3372767354 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20439 done;
+smallest memory usage: 3372194993 Bytes
+highest memory usage: 3372902270 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20440 done;
+smallest memory usage: 3372444661 Bytes
+highest memory usage: 3373304738 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20441 done;
+smallest memory usage: 3372500217 Bytes
+highest memory usage: 3373609990 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20442 done;
+smallest memory usage: 3372801213 Bytes
+highest memory usage: 3373966570 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20443 done;
+smallest memory usage: 3372712161 Bytes
+highest memory usage: 3374178542 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20444 done;
+smallest memory usage: 3372500133 Bytes
+highest memory usage: 3373877490 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20445 done;
+smallest memory usage: 3372108041 Bytes
+highest memory usage: 3373273398 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20446 done;
+smallest memory usage: 3372500077 Bytes
+highest memory usage: 3373273370 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20447 done;
+smallest memory usage: 3374055601 Bytes
+highest memory usage: 3375220958 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20448 done;
+smallest memory usage: 3372500021 Bytes
+highest memory usage: 3375220930 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20449 done;
+smallest memory usage: 3372067257 Bytes
+highest memory usage: 3373232614 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20450 done;
+smallest memory usage: 3372075677 Bytes
+highest memory usage: 3372808298 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20451 done;
+smallest memory usage: 3372047137 Bytes
+highest memory usage: 3372788206 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20452 done;
+smallest memory usage: 3372047109 Bytes
+highest memory usage: 3372759666 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20453 done;
+smallest memory usage: 3372067145 Bytes
+highest memory usage: 3372779702 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20454 done;
+smallest memory usage: 3372041773 Bytes
+highest memory usage: 3372774394 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20455 done;
+smallest memory usage: 3372121297 Bytes
+highest memory usage: 3372828574 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20456 done;
+smallest memory usage: 3372041717 Bytes
+highest memory usage: 3372828546 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20457 done;
+smallest memory usage: 3372046969 Bytes
+highest memory usage: 3372754246 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20458 done;
+smallest memory usage: 3372046941 Bytes
+highest memory usage: 3372759498 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20459 done;
+smallest memory usage: 3372046913 Bytes
+highest memory usage: 3372759470 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20460 done;
+smallest memory usage: 3372046885 Bytes
+highest memory usage: 3372759442 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20461 done;
+smallest memory usage: 3372046857 Bytes
+highest memory usage: 3372759414 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20462 done;
+smallest memory usage: 3372046829 Bytes
+highest memory usage: 3372759386 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20463 done;
+smallest memory usage: 3372046801 Bytes
+highest memory usage: 3372759358 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20464 done;
+smallest memory usage: 3372394581 Bytes
+highest memory usage: 3373107138 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20465 done;
+smallest memory usage: 3372394553 Bytes
+highest memory usage: 3373454918 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20466 done;
+smallest memory usage: 3372394525 Bytes
+highest memory usage: 3373454890 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20467 done;
+smallest memory usage: 3372107425 Bytes
+highest memory usage: 3373167790 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20468 done;
+smallest memory usage: 3372052581 Bytes
+highest memory usage: 3372825874 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20469 done;
+smallest memory usage: 3372311497 Bytes
+highest memory usage: 3373029974 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20470 done;
+smallest memory usage: 3372107341 Bytes
+highest memory usage: 3373084762 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20471 done;
+smallest memory usage: 3372095281 Bytes
+highest memory usage: 3372868574 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20472 done;
+smallest memory usage: 3372084565 Bytes
+highest memory usage: 3372845826 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20473 done;
+smallest memory usage: 3372084537 Bytes
+highest memory usage: 3372835110 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20474 done;
+smallest memory usage: 3372084509 Bytes
+highest memory usage: 3372835082 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20475 done;
+smallest memory usage: 3372153057 Bytes
+highest memory usage: 3372903630 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20476 done;
+smallest memory usage: 3372036485 Bytes
+highest memory usage: 3372855634 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20477 done;
+smallest memory usage: 3372036457 Bytes
+highest memory usage: 3372739062 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20478 done;
+smallest memory usage: 3372036429 Bytes
+highest memory usage: 3372739034 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20479 done;
+smallest memory usage: 3372036401 Bytes
+highest memory usage: 3372739006 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20480 done;
+smallest memory usage: 3372041045 Bytes
+highest memory usage: 3372743650 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20481 done;
+smallest memory usage: 3372172153 Bytes
+highest memory usage: 3372879430 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20482 done;
+smallest memory usage: 3374925885 Bytes
+highest memory usage: 3375764298 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20483 done;
+smallest memory usage: 3372084257 Bytes
+highest memory usage: 3375676430 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20484 done;
+smallest memory usage: 3379508997 Bytes
+highest memory usage: 3380259570 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20485 done;
+smallest memory usage: 3373139593 Bytes
+highest memory usage: 3381314934 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20486 done;
+smallest memory usage: 3372152749 Bytes
+highest memory usage: 3373958714 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20487 done;
+smallest memory usage: 3373012785 Bytes
+highest memory usage: 3373831934 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20488 done;
+smallest memory usage: 3373012757 Bytes
+highest memory usage: 3374691970 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20489 done;
+smallest memory usage: 3372310937 Bytes
+highest memory usage: 3373990150 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20490 done;
+smallest memory usage: 3372171901 Bytes
+highest memory usage: 3373149322 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20491 done;
+smallest memory usage: 3372393825 Bytes
+highest memory usage: 3373232238 Bytes
+==========
+
+
+==========
+iteration-19 for page index 20492 done;
+smallest memory usage: 3372066053 Bytes
+highest memory usage: 3373126418 Bytes
+==========
+
+random walker
+smallest memory usage: 7802874 Bytes
+highest memory usage: 3376747398 Bytes
+14136.783205032349 seconds
+farhanhp@farhanhp-pc:/media/farhanhp/0A127E28127E18C1/data pribadi/kuliah/skripsi/Skripsi latex/kodingan$ 

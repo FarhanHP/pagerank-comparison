@@ -1,0 +1,193 @@
+/bin/python3 "/media/farhanhp/0A127E28127E18C1/datfarhanhp@farhanhp-pc:/media/farhanhp/0A127E28127E18C1/data pribadi/kuliah/skripsi/Skripsi latex/kodingan$ /bin/python3 "/media/farhanhp/0A127E28127E18C1/data pribadi/kuliah/skripsi/Skripsi latex/kodingan/run_modified_dpc_v2.py"
+
+==========
+start; seconds since start: 0.0; time: 2023/9/10 20:12:5
+smallest memory usage: 0 Bytes
+highest memory usage: 0 Bytes
+==========
+
+
+==========
+instantiate step; seconds since start: 0.009; time: 2023/9/10 20:12:5
+smallest memory usage: 84469 Bytes
+highest memory usage: 84693 Bytes
+==========
+
+Create and dump P matrix start
+create_and_dump_p_column_values for page_index: 10 done; thread_id=19166
+create_and_dump_p_column_values for page_index: 86 done; thread_id=19319
+create_and_dump_p_column_values for page_index: 12 done; thread_id=19171
+create_and_dump_p_column_values for page_index: 3 done; thread_id=19158
+create_and_dump_p_column_values for page_index: 43 done; thread_id=19233
+create_and_dump_p_column_values for page_index: 21 done; thread_id=19189
+create_and_dump_p_column_values for page_index: 0 done; thread_id=19155
+create_and_dump_p_column_values for page_index: 78 done; thread_id=19304
+create_and_dump_p_column_values for page_index: 7 done; thread_id=19162
+create_and_dump_p_column_values for page_index: 9 done; thread_id=19164
+create_and_dump_p_column_values for page_index: 20 done; thread_id=19186
+create_and_dump_p_column_values for page_index: 35 done; thread_id=19216
+create_and_dump_p_column_values for page_index: 49 done; thread_id=19244
+create_and_dump_p_column_values for page_index: 44 done; thread_id=19234
+create_and_dump_p_column_values for page_index: 67 done; thread_id=19282
+create_and_dump_p_column_values for page_index: 38 done; thread_id=19222
+create_and_dump_p_column_values for page_index: 42 done; thread_id=19231
+create_and_dump_p_column_values for page_index: 15 done; thread_id=19176
+create_and_dump_p_column_values for page_index: 29 done; thread_id=19204
+create_and_dump_p_column_values for page_index: 25 done; thread_id=19197
+create_and_dump_p_column_values for page_index: 63 done; thread_id=19273
+create_and_dump_p_column_values for page_index: 57 done; thread_id=19260
+create_and_dump_p_column_values for page_index: 11 done; thread_id=19169
+create_and_dump_p_column_values for page_index: 5 done; thread_id=19160
+create_and_dump_p_column_values for page_index: 47 done; thread_id=19241
+create_and_dump_p_column_values for page_index: 30 done; thread_id=19207
+create_and_dump_p_column_values for page_index: 77 done; thread_id=19302
+create_and_dump_p_column_values for page_index: 80 done; thread_id=19307
+create_and_dump_p_column_values for page_index: 81 done; thread_id=19309
+create_and_dump_p_column_values for page_index: 6 done; thread_id=19161
+create_and_dump_p_column_values for page_index: 61 done; thread_id=19268
+create_and_dump_p_column_values for page_index: 27 done; thread_id=19200
+create_and_dump_p_column_values for page_index: 65 done; thread_id=19277
+create_and_dump_p_column_values for page_index: 73 done; thread_id=19293
+create_and_dump_p_column_values for page_index: 59 done; thread_id=19264
+create_and_dump_p_column_values for page_index: 1 done; thread_id=19156
+create_and_dump_p_column_values for page_index: 23 done; thread_id=19192
+create_and_dump_p_column_values for page_index: 41 done; thread_id=19229
+create_and_dump_p_column_values for page_index: 2 done; thread_id=19157
+create_and_dump_p_column_values for page_index: 14 done; thread_id=19175
+create_and_dump_p_column_values for page_index: 56 done; thread_id=19258
+create_and_dump_p_column_values for page_index: 13 done; thread_id=19172
+create_and_dump_p_column_values for page_index: 39 done; thread_id=19224
+create_and_dump_p_column_values for page_index: 96 done; thread_id=19340
+create_and_dump_p_column_values for page_index: 76 done; thread_id=19299
+create_and_dump_p_column_values for page_index: 33 done; thread_id=19212
+create_and_dump_p_column_values for page_index: 52 done; thread_id=19251
+create_and_dump_p_column_values for page_index: 75 done; thread_id=19297
+create_and_dump_p_column_values for page_index: 28 done; thread_id=19202
+create_and_dump_p_column_values for page_index: 87 done; thread_id=19321
+create_and_dump_p_column_values for page_index: 95 done; thread_id=19338
+create_and_dump_p_column_values for page_index: 18 done; thread_id=19182
+create_and_dump_p_column_values for page_index: 40 done; thread_id=19227
+create_and_dump_p_column_values for page_index: 84 done; thread_id=19315
+create_and_dump_p_column_values for page_index: 53 done; thread_id=19252
+create_and_dump_p_column_values for page_index: 8 done; thread_id=19163
+create_and_dump_p_column_values for page_index: 36 done; thread_id=19219
+create_and_dump_p_column_values for page_index: 17 done; thread_id=19180
+create_and_dump_p_column_values for page_index: 90 done; thread_id=19328
+create_and_dump_p_column_values for page_index: 32 done; thread_id=19211
+create_and_dump_p_column_values for page_index: 91 done; thread_id=19329
+create_and_dump_p_column_values for page_index: 72 done; thread_id=19292
+create_and_dump_p_column_values for page_index: 37 done; thread_id=19220
+create_and_dump_p_column_values for page_index: 58 done; thread_id=19263
+create_and_dump_p_column_values for page_index: 31 done; thread_id=19208
+create_and_dump_p_column_values for page_index: 24 done; thread_id=19195
+create_and_dump_p_column_values for page_index: 74 done; thread_id=19296
+create_and_dump_p_column_values for page_index: 94 done; thread_id=19335
+create_and_dump_p_column_values for page_index: 98 done; thread_id=19344
+create_and_dump_p_column_values for page_index: 26 done; thread_id=19198
+create_and_dump_p_column_values for page_index: 66 done; thread_id=19278
+create_and_dump_p_column_values for page_index: 97 done; thread_id=19341
+create_and_dump_p_column_values for page_index: 60 done; thread_id=19266
+create_and_dump_p_column_values for page_index: 46 done; thread_id=19239
+create_and_dump_p_column_values for page_index: 4 done; thread_id=19159
+create_and_dump_p_column_values for page_index: 64 done; thread_id=19275
+create_and_dump_p_column_values for page_index: 62 done; thread_id=19272
+create_and_dump_p_column_values for page_index: 19 done; thread_id=19185
+create_and_dump_p_column_values for page_index: 55 done; thread_id=19257
+create_and_dump_p_column_values for page_index: 51 done; thread_id=19249
+create_and_dump_p_column_values for page_index: 88 done; thread_id=19324
+create_and_dump_p_column_values for page_index: 92 done; thread_id=19332
+create_and_dump_p_column_values for page_index: 85 done; thread_id=19318
+create_and_dump_p_column_values for page_index: 69 done; thread_id=19286
+create_and_dump_p_column_values for page_index: 89 done; thread_id=19325
+create_and_dump_p_column_values for page_index: 99 done; thread_id=19345
+create_and_dump_p_column_values for page_index: 68 done; thread_id=19283
+create_and_dump_p_column_values for page_index: 54 done; thread_id=19255
+create_and_dump_p_column_values for page_index: 79 done; thread_id=19305
+create_and_dump_p_column_values for page_index: 50 done; thread_id=19246
+create_and_dump_p_column_values for page_index: 34 done; thread_id=19215
+create_and_dump_p_column_values for page_index: 22 done; thread_id=19191
+create_and_dump_p_column_values for page_index: 82 done; thread_id=19311
+create_and_dump_p_column_values for page_index: 70 done; thread_id=19287
+create_and_dump_p_column_values for page_index: 83 done; thread_id=19313
+create_and_dump_p_column_values for page_index: 71 done; thread_id=19290
+create_and_dump_p_column_values for page_index: 48 done; thread_id=19242
+create_and_dump_p_column_values for page_index: 16 done; thread_id=19179
+create_and_dump_p_column_values for page_index: 45 done; thread_id=19237
+create_and_dump_p_column_values for page_index: 93 done; thread_id=19334
+Create and dump P matrix done
+
+==========
+create and dump matrix P step; seconds since start: 0.616; time: 2023/9/10 20:12:6
+smallest memory usage: 343686 Bytes
+highest memory usage: 2055945 Bytes
+==========
+
+Modified DPC V2 Start
+
+==========
+prepare to execution step; seconds since start: 0.616; time: 2023/9/10 20:12:6
+smallest memory usage: 344422 Bytes
+highest memory usage: 344422 Bytes
+==========
+
+dump_q_list start
+dump_q_list cluster-0 done; thread_id=19143
+dump_q_list cluster-1 done; thread_id=19143
+dump_q_list cluster-2 done; thread_id=19143
+dump_q_list cluster-3 done; thread_id=19143
+dump_q_list cluster-4 done; thread_id=19143
+dump_q_list done
+
+==========
+create and dump matrix Qs step; seconds since start: 0.621; time: 2023/9/10 20:12:6
+smallest memory usage: 347945 Bytes
+highest memory usage: 364688 Bytes
+==========
+
+cluster_separated_phi-0 14 iteration count; thread_id=19143
+cluster_separated_phi-1 6 iteration count; thread_id=19143
+cluster_separated_phi-2 100 iteration count; thread_id=19143
+cluster_separated_phi-3 69 iteration count; thread_id=19143
+cluster_separated_phi-4 104 iteration count; thread_id=19143
+
+==========
+cluster_separated_phi step; seconds since start: 0.632; time: 2023/9/10 20:12:6
+smallest memory usage: 349999 Bytes
+highest memory usage: 366568 Bytes
+==========
+
+construct_a for domain 0 done
+construct_a for domain 1 done
+construct_a for domain 2 done
+construct_a for domain 3 done
+construct_a for domain 4 done
+
+==========
+matrix a step; seconds since start: 0.649; time: 2023/9/10 20:12:6
+smallest memory usage: 350382 Bytes
+highest memory usage: 361849 Bytes
+==========
+
+pagerank_z 38 iteration count; thread_id=19143
+
+==========
+vector z step; seconds since start: 0.649; time: 2023/9/10 20:12:6
+smallest memory usage: 350412 Bytes
+highest memory usage: 351178 Bytes
+==========
+
+
+==========
+after execution step; seconds since start: 0.65; time: 2023/9/10 20:12:6
+smallest memory usage: 348683 Bytes
+highest memory usage: 352853 Bytes
+==========
+
+
+==========
+modified dpc v2 end; seconds since start: 0.652; time: 2023/9/10 20:12:6
+smallest memory usage: 348917 Bytes
+highest memory usage: 376588 Bytes
+==========
+
+farhanhp@farhanhp-pc:/media/farhanhp/0A127E28127E18C1/data pribadi/kuliah/skripsi/Skripsi latex/kodingan$ 

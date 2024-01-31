@@ -1,0 +1,176 @@
+farhanhp@farhanhp-pc:/media/farhanhp/0A127E28127E18C1/data pribadi/kuliah/skripsi/Skripsi latex/kodingan$ /bin/python3 "/media/farhanhp/0A127E28127E18C1/data pribadi/kuliah/skripsi/Skripsi latex/kodingan/run_original_pagerank_dpc_paper_version.py"
+
+==========
+start; seconds since start: 0.0; time: 2023/9/10 20:13:51
+smallest memory usage: 0 Bytes
+highest memory usage: 0 Bytes
+==========
+
+
+==========
+instantiate step; seconds since start: 0.014; time: 2023/9/10 20:13:51
+smallest memory usage: 82912 Bytes
+highest memory usage: 83261 Bytes
+==========
+
+Create P matrix start
+fill_p_column_values for page_index = 0 done; thread_id=19911
+fill_p_column_values for page_index = 7 done; thread_id=19918
+fill_p_column_values for page_index = 33 done; thread_id=19966
+fill_p_column_values for page_index = 18 done; thread_id=19939
+fill_p_column_values for page_index = 11 done; thread_id=19924
+fill_p_column_values for page_index = 23 done; thread_id=19949
+fill_p_column_values for page_index = 13 done; thread_id=19928
+fill_p_column_values for page_index = 29 done; thread_id=19957
+fill_p_column_values for page_index = 79 done; thread_id=20057
+fill_p_column_values for page_index = 46 done; thread_id=19992
+fill_p_column_values for page_index = 25 done; thread_id=19952
+fill_p_column_values for page_index = 61 done; thread_id=20023
+fill_p_column_values for page_index = 2 done; thread_id=19913
+fill_p_column_values for page_index = 8 done; thread_id=19919
+fill_p_column_values for page_index = 4 done; thread_id=19915
+fill_p_column_values for page_index = 21 done; thread_id=19945
+fill_p_column_values for page_index = 24 done; thread_id=19950
+fill_p_column_values for page_index = 1 done; thread_id=19912
+fill_p_column_values for page_index = 19 done; thread_id=19941
+fill_p_column_values for page_index = 63 done; thread_id=20027
+fill_p_column_values for page_index = 36 done; thread_id=19973
+fill_p_column_values for page_index = 9 done; thread_id=19921
+fill_p_column_values for page_index = 26 done; thread_id=19954
+fill_p_column_values for page_index = 44 done; thread_id=19989
+fill_p_column_values for page_index = 85 done; thread_id=20069
+fill_p_column_values for page_index = 42 done; thread_id=19984
+fill_p_column_values for page_index = 15 done; thread_id=19932
+fill_p_column_values for page_index = 40 done; thread_id=19980
+fill_p_column_values for page_index = 10 done; thread_id=19922
+fill_p_column_values for page_index = 90 done; thread_id=20079
+fill_p_column_values for page_index = 94 done; thread_id=20088
+fill_p_column_values for page_index = 70 done; thread_id=20041
+fill_p_column_values for page_index = 80 done; thread_id=20059
+fill_p_column_values for page_index = 43 done; thread_id=19987
+fill_p_column_values for page_index = 30 done; thread_id=19960
+fill_p_column_values for page_index = 16 done; thread_id=19935
+fill_p_column_values for page_index = 45 done; thread_id=19990
+fill_p_column_values for page_index = 99 done; thread_id=20097
+fill_p_column_values for page_index = 52 done; thread_id=20004
+fill_p_column_values for page_index = 76 done; thread_id=20053
+fill_p_column_values for page_index = 69 done; thread_id=20039
+fill_p_column_values for page_index = 17 done; thread_id=19937
+fill_p_column_values for page_index = 57 done; thread_id=20013
+fill_p_column_values for page_index = 60 done; thread_id=20021
+fill_p_column_values for page_index = 73 done; thread_id=20047
+fill_p_column_values for page_index = 58 done; thread_id=20016
+fill_p_column_values for page_index = 54 done; thread_id=20008
+fill_p_column_values for page_index = 47 done; thread_id=19995
+fill_p_column_values for page_index = 67 done; thread_id=20035
+fill_p_column_values for page_index = 72 done; thread_id=20045
+fill_p_column_values for page_index = 31 done; thread_id=19962
+fill_p_column_values for page_index = 22 done; thread_id=19947
+fill_p_column_values for page_index = 39 done; thread_id=19979
+fill_p_column_values for page_index = 20 done; thread_id=19943
+fill_p_column_values for page_index = 3 done; thread_id=19914
+fill_p_column_values for page_index = 38 done; thread_id=19976
+fill_p_column_values for page_index = 32 done; thread_id=19964
+fill_p_column_values for page_index = 56 done; thread_id=20012
+fill_p_column_values for page_index = 5 done; thread_id=19916
+fill_p_column_values for page_index = 55 done; thread_id=20010
+fill_p_column_values for page_index = 68 done; thread_id=20037
+fill_p_column_values for page_index = 14 done; thread_id=19931
+fill_p_column_values for page_index = 65 done; thread_id=20031
+fill_p_column_values for page_index = 95 done; thread_id=20089
+fill_p_column_values for page_index = 6 done; thread_id=19917
+fill_p_column_values for page_index = 12 done; thread_id=19927
+fill_p_column_values for page_index = 87 done; thread_id=20074
+fill_p_column_values for page_index = 48 done; thread_id=19997
+fill_p_column_values for page_index = 51 done; thread_id=20003
+fill_p_column_values for page_index = 75 done; thread_id=19918
+fill_p_column_values for page_index = 82 done; thread_id=20064
+fill_p_column_values for page_index = 37 done; thread_id=19974
+fill_p_column_values for page_index = 83 done; thread_id=20065
+fill_p_column_values for page_index = 78 done; thread_id=20055
+fill_p_column_values for page_index = 59 done; thread_id=20018
+fill_p_column_values for page_index = 77 done; thread_id=20051
+fill_p_column_values for page_index = 86 done; thread_id=20071
+fill_p_column_values for page_index = 84 done; thread_id=20067
+fill_p_column_values for page_index = 98 done; thread_id=20095
+fill_p_column_values for page_index = 88 done; thread_id=20076
+fill_p_column_values for page_index = 28 done; thread_id=19956
+fill_p_column_values for page_index = 62 done; thread_id=20024
+fill_p_column_values for page_index = 91 done; thread_id=20081
+fill_p_column_values for page_index = 66 done; thread_id=20033
+fill_p_column_values for page_index = 97 done; thread_id=20093
+fill_p_column_values for page_index = 89 done; thread_id=20077
+fill_p_column_values for page_index = 53 done; thread_id=20006
+fill_p_column_values for page_index = 96 done; thread_id=20092
+fill_p_column_values for page_index = 64 done; thread_id=20029
+fill_p_column_values for page_index = 35 done; thread_id=19970
+fill_p_column_values for page_index = 34 done; thread_id=19968
+fill_p_column_values for page_index = 71 done; thread_id=20043
+fill_p_column_values for page_index = 74 done; thread_id=20049
+fill_p_column_values for page_index = 27 done; thread_id=19911
+fill_p_column_values for page_index = 41 done; thread_id=19983
+fill_p_column_values for page_index = 49 done; thread_id=19998
+fill_p_column_values for page_index = 81 done; thread_id=20062
+fill_p_column_values for page_index = 50 done; thread_id=20000
+fill_p_column_values for page_index = 93 done; thread_id=20085
+fill_p_column_values for page_index = 92 done; thread_id=20084
+Create P matrix done
+
+==========
+create p matrix step; seconds since start: 0.549; time: 2023/9/10 20:13:52
+smallest memory usage: 393868 Bytes
+highest memory usage: 2045114 Bytes
+==========
+
+iteration=0; delta=0.3149654353103036
+iteration=1; delta=0.1461139672154385
+iteration=2; delta=0.08263776192026753
+iteration=3; delta=0.05800142948109446
+iteration=4; delta=0.04144022953218515
+iteration=5; delta=0.029845402570511975
+iteration=6; delta=0.021644532325322683
+iteration=7; delta=0.0158094236162497
+iteration=8; delta=0.011627973553126442
+iteration=9; delta=0.008609697995163923
+iteration=10; delta=0.006415080057160784
+iteration=11; delta=0.0048079402368462745
+iteration=12; delta=0.003622933874544751
+iteration=13; delta=0.0027435022301015165
+iteration=14; delta=0.002086878074619153
+iteration=15; delta=0.0015938512884825866
+iteration=16; delta=0.0012217481060124633
+iteration=17; delta=0.0009395869114428898
+iteration=18; delta=0.0007247144344918654
+iteration=19; delta=0.0005604539735879523
+iteration=20; delta=0.0004344494172794811
+iteration=21; delta=0.00033749063582377923
+iteration=22; delta=0.00026267412075519476
+iteration=23; delta=0.00020479874443015702
+iteration=24; delta=0.00015992761244965244
+iteration=25; delta=0.00012506811306972382
+iteration=26; delta=9.793670196517616e-05
+iteration=27; delta=7.678487818883729e-05
+iteration=28; delta=6.026966427670195e-05
+iteration=29; delta=4.73566762567725e-05
+iteration=30; delta=3.7247214667273775e-05
+iteration=31; delta=2.932316936975839e-05
+iteration=32; delta=2.310521041719348e-05
+iteration=33; delta=1.8220940284217457e-05
+iteration=34; delta=1.4380550828685433e-05
+iteration=35; delta=1.135815904583959e-05
+iteration=36; delta=8.977457069912374e-06
+
+==========
+computation step; seconds since start: 0.563; time: 2023/9/10 20:13:52
+smallest memory usage: 395177 Bytes
+highest memory usage: 398186 Bytes
+==========
+
+
+==========
+original pagerank end; seconds since start: 0.568; time: 2023/9/10 20:13:52
+smallest memory usage: 395226 Bytes
+highest memory usage: 423093 Bytes
+==========
+
+farhanhp@farhanhp-pc:/media/farhanhp/0A127E28127E18C1/data pribadi/kuliah/skripsi/Skripsi latex/kodingan$ 

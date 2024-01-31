@@ -1,0 +1,23 @@
+dataset 1
+---------
+original pagerank 	= 	0 Byte; 7.794.342 Byte; [3.417.632.391] Byte; 3.368.126.777 Byte; 
+				3.374.057.813 Byte; 
+				328,803 Detik
+dpc 			= 	448 Byte; 7.795.426 Byte; 65.997.968 Byte; 178.392.122 Byte; 139.205.457 Byte;
+				283.809.411 Byte; 826.464.075 Byte; 826.464.575 Byte; [842.481.525] Byte;
+				15.144.601 Byte; 
+				1151,628 Detik
+modified dpc		=	0 Byte; 7.795.698 Byte; 65.971.920 Byte; 8.066.752 Byte; [86.581.941] Byte; 
+				47.395.117 Byte; 11.246.951 Byte; 10.886.395 Byte; 11.231.223 Byte 15.130.291 Byte;
+				816,375 Detik
+
+dataset 2
+----------
+original pagerank 	= 	0 Byte; 83.261 Byte; [2.045.114] Byte; 398.186 Byte; 423.093 Byte; 
+				0,568 Detik
+dpc			= 	448 Byte; 84.765 Byte; [2.056.302] Byte; 368.902 Byte; 371.152 Byte; 374.603 Byte; 
+				418.259 Byte; 418.634 Byte; 450.673 Byte; 388.626 Byte; 
+				19,372 Detik
+modified dpc		=	0 Byte; 84.693 Byte; [2.055.945] Byte; 344.422 Byte; 364.688 Byte; 366.568 Byte;
+				361.849 Byte; 351.178 Byte; 352.853 Byte; 376.588 Byte; 
+				0,652 Detik

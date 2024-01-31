@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>shared_helpers API documentation</title>
+<meta name="description" content="this package contain helper classes and functions that are used for all page ranking methods" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Package <code>shared_helpers</code></h1>
+</header>
+<section id="section-intro">
+<p>this package contain helper classes and functions that are used for all page ranking methods</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+this package contain helper classes and functions that are used for all page ranking methods
+&#34;&#34;&#34;
+
+import tracemalloc
+from numpy import float_, full, float64
+from numpy.typing import NDArray
+from model import PageInformation
+from urllib.parse import urlparse
+from typing import cast
+from time import time
+from datetime import datetime
+
+def l1_norm(list: NDArray[float_]) -&gt; float_:
+  &#34;&#34;&#34;
+  calculate of level 1 normalization of N x 1 list or vector
+  &#34;&#34;&#34;
+
+  total = cast(float_, 0)
+  for i in list:
+    total += abs(i)
+
+  return total
+
+def create_url_to_page_information_dict(page_informations: list[PageInformation]) -&gt; dict[str, PageInformation]:
+  &#34;&#34;&#34;
+  create a python dictionary with PageInformation.url as key, and the PageInformation itself as the content
+  &#34;&#34;&#34;
+
+  url_to_page_information = {}
+
+  for page_information in page_informations:
+    url_to_page_information[page_information.url] = page_information
+  
+  return url_to_page_information
+
+def sort_page_information_by_domain(clusters: dict[str, list[PageInformation]]) -&gt; list[PageInformation]:
+  &#34;&#34;&#34;
+  convert clusters dictionary into PageInformation-s list sorted with following logic:
+  
+  {&#34;abc.com&#34;: [page_information0, page_information1], &#34;aaa.com&#34;: [page_information2]} -&gt; [page_information0, page_information1, page_information2]
+  &#34;&#34;&#34;
+
+  page_informations = []
+  for cluster in clusters.values():
+    for index, page_information in enumerate(cluster):
+      page_information.index = len(page_informations) + index
+    page_informations += cluster
+
+  return page_informations
+
+class PageInformationsClusterizer:
+  &#34;&#34;&#34;
+  helper class related to clusterizing PageInformation-s list into a cluster dictionary
+  &#34;&#34;&#34;
+
+  def clusterize(self, page_informations: list[PageInformation]) -&gt; dict[str, list[PageInformation]]:
+    &#34;&#34;&#34;
+    convert PageInformation-s list into a cluster dictionary
+    &#34;&#34;&#34;
+
+    clusters: dict[str, list[PageInformation]] = {}
+
+    for page_information in page_informations:
+      
+      try:
+        domain = self.get_domain(page_information)
+        if(domain in clusters.keys()):
+          clusters[domain].append(page_information)
+        else:
+          clusters[domain] = [page_information]
+      except TypeError as e:
+        print(e)
+
+    return clusters
+  
+  def get_domain(self, page_information: PageInformation) -&gt; str:
+    &#34;&#34;&#34;
+    extract domain from PageInformation.url
+    &#34;&#34;&#34;
+
+    parse_result = urlparse(page_information.url)    
+    domain = parse_result.hostname
+
+    if(domain is None):
+      raise TypeError(f&#34;cannot get hostname from {page_information.url}&#34;)
+
+    if(domain[0:4] == &#34;www.&#34;):
+        domain = domain[4:]
+
+    return domain
+
+def full_matrix(shape, value: float) -&gt; NDArray[float64]:
+  &#34;&#34;&#34;
+  wrapper function to create matrix or factor using numpy.full
+  &#34;&#34;&#34;
+
+  return full(shape, value, dtype=float64)
+
+def show_and_reset_smallest_and_highest_memory_usage(step_name: str, start_time: float):
+  &#34;&#34;&#34;
+  display peak and lowest memory usage, and reset the tracemalloc after that
+  &#34;&#34;&#34;
+
+  traced_memory = tracemalloc.get_traced_memory()
+  print(&#34;\n==========&#34;)
+  print(f&#34;{step_name}; seconds since start: {round(time() - start_time, 3)}; time: {get_datetime_string_now()}&#34;)
+  print(f&#34;smallest memory usage: {traced_memory[0]} Bytes&#34;)
+  print(f&#34;highest memory usage: {traced_memory[1]} Bytes&#34;)
+  print(&#34;==========\n&#34;)
+  tracemalloc.reset_peak()
+
+def get_datetime_string_now() -&gt; str:
+  &#34;&#34;&#34;
+  get current datetime string with format YYYY/MM/DD HH:mm:ss
+  &#34;&#34;&#34;
+
+  now = datetime.now()
+  return f&#34;{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}:{round(now.second)}&#34;</code></pre>
+</details>
+</section>
+<section>
+<h2 class="section-title" id="header-submodules">Sub-modules</h2>
+<dl>
+<dt><code class="name"><a title="shared_helpers.cluster_helper" href="cluster_helper.html">shared_helpers.cluster_helper</a></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="shared_helpers.create_url_to_page_information_dict"><code class="name flex">
+<span>def <span class="ident">create_url_to_page_information_dict</span></span>(<span>page_informations: list[<a title="model.PageInformation" href="../model/index.html#model.PageInformation">PageInformation</a>]) ‑> dict[str, <a title="model.PageInformation" href="../model/index.html#model.PageInformation">PageInformation</a>]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>create a python dictionary with PageInformation.url as key, and the PageInformation itself as the content</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def create_url_to_page_information_dict(page_informations: list[PageInformation]) -&gt; dict[str, PageInformation]:
+  &#34;&#34;&#34;
+  create a python dictionary with PageInformation.url as key, and the PageInformation itself as the content
+  &#34;&#34;&#34;
+
+  url_to_page_information = {}
+
+  for page_information in page_informations:
+    url_to_page_information[page_information.url] = page_information
+  
+  return url_to_page_information</code></pre>
+</details>
+</dd>
+<dt id="shared_helpers.full_matrix"><code class="name flex">
+<span>def <span class="ident">full_matrix</span></span>(<span>shape, value: float) ‑> numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>wrapper function to create matrix or factor using numpy.full</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def full_matrix(shape, value: float) -&gt; NDArray[float64]:
+  &#34;&#34;&#34;
+  wrapper function to create matrix or factor using numpy.full
+  &#34;&#34;&#34;
+
+  return full(shape, value, dtype=float64)</code></pre>
+</details>
+</dd>
+<dt id="shared_helpers.get_datetime_string_now"><code class="name flex">
+<span>def <span class="ident">get_datetime_string_now</span></span>(<span>) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>get current datetime string with format YYYY/MM/DD HH:mm:ss</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_datetime_string_now() -&gt; str:
+  &#34;&#34;&#34;
+  get current datetime string with format YYYY/MM/DD HH:mm:ss
+  &#34;&#34;&#34;
+
+  now = datetime.now()
+  return f&#34;{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}:{round(now.second)}&#34;</code></pre>
+</details>
+</dd>
+<dt id="shared_helpers.l1_norm"><code class="name flex">
+<span>def <span class="ident">l1_norm</span></span>(<span>list: numpy.ndarray[typing.Any, numpy.dtype[numpy.float64]]) ‑> numpy.float64</span>
+</code></dt>
+<dd>
+<div class="desc"><p>calculate of level 1 normalization of N x 1 list or vector</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def l1_norm(list: NDArray[float_]) -&gt; float_:
+  &#34;&#34;&#34;
+  calculate of level 1 normalization of N x 1 list or vector
+  &#34;&#34;&#34;
+
+  total = cast(float_, 0)
+  for i in list:
+    total += abs(i)
+
+  return total</code></pre>
+</details>
+</dd>
+<dt id="shared_helpers.show_and_reset_smallest_and_highest_memory_usage"><code class="name flex">
+<span>def <span class="ident">show_and_reset_smallest_and_highest_memory_usage</span></span>(<span>step_name: str, start_time: float)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>display peak and lowest memory usage, and reset the tracemalloc after that</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def show_and_reset_smallest_and_highest_memory_usage(step_name: str, start_time: float):
+  &#34;&#34;&#34;
+  display peak and lowest memory usage, and reset the tracemalloc after that
+  &#34;&#34;&#34;
+
+  traced_memory = tracemalloc.get_traced_memory()
+  print(&#34;\n==========&#34;)
+  print(f&#34;{step_name}; seconds since start: {round(time() - start_time, 3)}; time: {get_datetime_string_now()}&#34;)
+  print(f&#34;smallest memory usage: {traced_memory[0]} Bytes&#34;)
+  print(f&#34;highest memory usage: {traced_memory[1]} Bytes&#34;)
+  print(&#34;==========\n&#34;)
+  tracemalloc.reset_peak()</code></pre>
+</details>
+</dd>
+<dt id="shared_helpers.sort_page_information_by_domain"><code class="name flex">
+<span>def <span class="ident">sort_page_information_by_domain</span></span>(<span>clusters: dict[str, list[<a title="model.PageInformation" href="../model/index.html#model.PageInformation">PageInformation</a>]]) ‑> list[<a title="model.PageInformation" href="../model/index.html#model.PageInformation">PageInformation</a>]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>convert clusters dictionary into PageInformation-s list sorted with following logic:</p>
+<p>{"abc.com": [page_information0, page_information1], "aaa.com": [page_information2]} -&gt; [page_information0, page_information1, page_information2]</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def sort_page_information_by_domain(clusters: dict[str, list[PageInformation]]) -&gt; list[PageInformation]:
+  &#34;&#34;&#34;
+  convert clusters dictionary into PageInformation-s list sorted with following logic:
+  
+  {&#34;abc.com&#34;: [page_information0, page_information1], &#34;aaa.com&#34;: [page_information2]} -&gt; [page_information0, page_information1, page_information2]
+  &#34;&#34;&#34;
+
+  page_informations = []
+  for cluster in clusters.values():
+    for index, page_information in enumerate(cluster):
+      page_information.index = len(page_informations) + index
+    page_informations += cluster
+
+  return page_informations</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="shared_helpers.PageInformationsClusterizer"><code class="flex name class">
+<span>class <span class="ident">PageInformationsClusterizer</span></span>
+</code></dt>
+<dd>
+<div class="desc"><p>helper class related to clusterizing PageInformation-s list into a cluster dictionary</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class PageInformationsClusterizer:
+  &#34;&#34;&#34;
+  helper class related to clusterizing PageInformation-s list into a cluster dictionary
+  &#34;&#34;&#34;
+
+  def clusterize(self, page_informations: list[PageInformation]) -&gt; dict[str, list[PageInformation]]:
+    &#34;&#34;&#34;
+    convert PageInformation-s list into a cluster dictionary
+    &#34;&#34;&#34;
+
+    clusters: dict[str, list[PageInformation]] = {}
+
+    for page_information in page_informations:
+      
+      try:
+        domain = self.get_domain(page_information)
+        if(domain in clusters.keys()):
+          clusters[domain].append(page_information)
+        else:
+          clusters[domain] = [page_information]
+      except TypeError as e:
+        print(e)
+
+    return clusters
+  
+  def get_domain(self, page_information: PageInformation) -&gt; str:
+    &#34;&#34;&#34;
+    extract domain from PageInformation.url
+    &#34;&#34;&#34;
+
+    parse_result = urlparse(page_information.url)    
+    domain = parse_result.hostname
+
+    if(domain is None):
+      raise TypeError(f&#34;cannot get hostname from {page_information.url}&#34;)
+
+    if(domain[0:4] == &#34;www.&#34;):
+        domain = domain[4:]
+
+    return domain</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="shared_helpers.PageInformationsClusterizer.clusterize"><code class="name flex">
+<span>def <span class="ident">clusterize</span></span>(<span>self, page_informations: list[<a title="model.PageInformation" href="../model/index.html#model.PageInformation">PageInformation</a>]) ‑> dict[str, list[<a title="model.PageInformation" href="../model/index.html#model.PageInformation">PageInformation</a>]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>convert PageInformation-s list into a cluster dictionary</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def clusterize(self, page_informations: list[PageInformation]) -&gt; dict[str, list[PageInformation]]:
+  &#34;&#34;&#34;
+  convert PageInformation-s list into a cluster dictionary
+  &#34;&#34;&#34;
+
+  clusters: dict[str, list[PageInformation]] = {}
+
+  for page_information in page_informations:
+    
+    try:
+      domain = self.get_domain(page_information)
+      if(domain in clusters.keys()):
+        clusters[domain].append(page_information)
+      else:
+        clusters[domain] = [page_information]
+    except TypeError as e:
+      print(e)
+
+  return clusters</code></pre>
+</details>
+</dd>
+<dt id="shared_helpers.PageInformationsClusterizer.get_domain"><code class="name flex">
+<span>def <span class="ident">get_domain</span></span>(<span>self, page_information: <a title="model.PageInformation" href="../model/index.html#model.PageInformation">PageInformation</a>) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>extract domain from PageInformation.url</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_domain(self, page_information: PageInformation) -&gt; str:
+  &#34;&#34;&#34;
+  extract domain from PageInformation.url
+  &#34;&#34;&#34;
+
+  parse_result = urlparse(page_information.url)    
+  domain = parse_result.hostname
+
+  if(domain is None):
+    raise TypeError(f&#34;cannot get hostname from {page_information.url}&#34;)
+
+  if(domain[0:4] == &#34;www.&#34;):
+      domain = domain[4:]
+
+  return domain</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-submodules">Sub-modules</a></h3>
+<ul>
+<li><code><a title="shared_helpers.cluster_helper" href="cluster_helper.html">shared_helpers.cluster_helper</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="shared_helpers.create_url_to_page_information_dict" href="#shared_helpers.create_url_to_page_information_dict">create_url_to_page_information_dict</a></code></li>
+<li><code><a title="shared_helpers.full_matrix" href="#shared_helpers.full_matrix">full_matrix</a></code></li>
+<li><code><a title="shared_helpers.get_datetime_string_now" href="#shared_helpers.get_datetime_string_now">get_datetime_string_now</a></code></li>
+<li><code><a title="shared_helpers.l1_norm" href="#shared_helpers.l1_norm">l1_norm</a></code></li>
+<li><code><a title="shared_helpers.show_and_reset_smallest_and_highest_memory_usage" href="#shared_helpers.show_and_reset_smallest_and_highest_memory_usage">show_and_reset_smallest_and_highest_memory_usage</a></code></li>
+<li><code><a title="shared_helpers.sort_page_information_by_domain" href="#shared_helpers.sort_page_information_by_domain">sort_page_information_by_domain</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="shared_helpers.PageInformationsClusterizer" href="#shared_helpers.PageInformationsClusterizer">PageInformationsClusterizer</a></code></h4>
+<ul class="">
+<li><code><a title="shared_helpers.PageInformationsClusterizer.clusterize" href="#shared_helpers.PageInformationsClusterizer.clusterize">clusterize</a></code></li>
+<li><code><a title="shared_helpers.PageInformationsClusterizer.get_domain" href="#shared_helpers.PageInformationsClusterizer.get_domain">get_domain</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

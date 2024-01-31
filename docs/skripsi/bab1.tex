@@ -1,0 +1,83 @@
+\chapter{PENDAHULUAN}
+
+\section{Latar Belakang Masalah}
+
+Internet adalah jaringan luas yang membuat jaringan komputer seluruh dunia yang dijalankan oleh perusahaan, pemerintahan, universitas, dan organisasi lainnya untuk dapat saling berkomunikasi \citep{sample2018internet}. Internet memiliki banyak kegunaan. Di bidang komunikasi, Internet melahirkan \textit{Voice over Internet Protocol} (VoIP) dan surat elektronik (\textit{email}). Di bidang pengiriman data, internet memungkinkan pengguna untuk dapat mengunggah berkas ke \textit{file server} untuk dibagikan ke orang lain atau supaya bisa diakses di mana saja. Yang paling populer, selain dari dua bidang tersebut, internet melahirkan World Wide Web (WWW) yang memungkinkan situs web atau biasa disebut \textit{website} untuk bisa diakses oleh semua orang.
+
+\textit{Website} adalah sekumpulan halaman web yang saling terkait dan berada pada nama domain yang sama. Website dapat dibuat dan dipelihara oleh seorang individu, grup, perusahaan, atau organisasi lain dengan berbagai macam tujuan \citep{techopedia2020website}. Dengan adanya \textit{website}, kegunaan internet menjadi semakin lebih luas, lebih berkualitas, dan lebih mudah digunakan. \textit{Website} yang menggunakan protokol HTTP, memungkinkan untuk mengirim berkas HTML, CSS, dan JavaScript sehingga internet dapat menampilkan visual yang lebih ramah terhadap pengguna dan menjadi media hiburan baru. Tidak heran, \textit{website} terus tumbuh pesat. Pada tahun 1992 hanya terdapat sepuluh \textit{website}, lalu pada tahun 1994 angka ini bertumbuh menjadi 3.000 \textit{website}, dan semakin bertumbuh pesat pada tahun 2021 menjadi kurang lebih 1,88 miliar \textit{website} \citep{amstrong2021website}.
+
+Dengan meledaknya jumlah halaman web, memunculkan tantangan baru dalam memperoleh informasi dari web. Pengguna biasanya menelusuri web dengan mengunjungi graf \textit{link} yang terdapat pada halaman web, biasanya dimulai pada situs kumpulan index halaman web berkualitas tinggi yang dipelihara oleh manusia seperti Yahoo.com, atau menggunakan \textit{search engine} \citep{brin1998anatomy}. Seiring perkembangan zaman, \textit{search engine} Google menjadi \textit{search engine} teratas dengan pengguna terbesar di dunia dengan penguasaan pasar sebesar 91\% \citep{gsc2022marketshare}. Google awalnya merupakan proyek Sergey Brin dan Larry Page saat mereka mengambil gelar Ph.D di Universitas Stanford dengan tujuan membuat \textit{search engine} yang lebih berkualitas dibandingkan \textit{search engine} lain \citep{brin1998anatomy}. Kunci kesuksesan dari Google terletak pada Pagerank. Pagerank merangking halaman web berdasarkan kepentingan relatif (\textit{relative importance}) suatu halaman web berdasarkan graf tautan web \citep{ilprints422}. Sebelum adanya Pagerank, \textit{search engine} lain biasanya merangking suatu halaman web dengan menghitung banyaknya \textit{backlink} yang merujuk halaman tersebut \citep{ilprints422}. Metode tersebut akan menjadi mudah untuk dimanipulasi pemilik halaman web yang ingin mendapatkan \textit{ranking} teratas dengan membuat halaman web lain yang berisi \textit{link} yang menunjuk pada halaman web tujuan sebanyak-banyaknya. Pagerank menjawab permasalahan tersebut dengan melakukan normalisasi pada jumlah \textit{backlink} suatu halaman web \citep{brin1998anatomy}. Hal ini yang membuat hasil pencarian Google menjadi lebih relevan dibandingkan hasil pencarian \textit{search engine} lain.
+
+Telah dilakukan penelitian mengenai \textit{search engine}, \citet{chenEtAl2006EfficientQuery} melakukan sebuah penelitian berjudul "\textit{Efficient Query Processing in Geographic Web Search Engines}". Pada penelitian tersebut diajukan algoritma pemrosesan kueri yang lebih efisien daripada algoritma kueri yang biasa dipakai pada \textit{geographic search engine}. Algoritma yang diajukan bersifat \textit{low-level}, karena membuat struktur data internal tersendiri pada \textit{hard drive} tanpa melalui lapisan komunikasi pada \textit{database}, sehingga lebih efisien. Terdapat tiga algoritma yang diajukan: \textit{K-Sweep}, \textit{Tile Index}, dan \textit{Space-Filling Inverted Index}, setelah dilakukan pengujian, menunjukkan performa algoritma tersebut jauh lebih baik daripada algoritma \textit{Text-First} atau \textit{Geo-First} yang merupakan algoritma pemrosesan kueri yang biasa dipakai pada \textit{geographic search engine}, bahkan mendekati performa \textit{search engine} teks biasa \citep{chenEtAl2006EfficientQuery}. Selanjutnya \citet{allahEtAl2021SearchUi} melakukan tinjauan literatur tentang desain \textit{user interface} (UI) \textit{web search} untuk lansia yang berjudul "\textit{Designing web search UI for the elderly community: a systematic literature review}". Dari tinjauan literatur tersebut diberikan saran improvisasi dari UI \textit{web search} yang sudah ada agar lebih ramah lansia seperti: Tampilan visual yang jelas dan mudah dibedakan, penjelasan singkat apa yang akan terjadi ketika menekan tombol dialog, halaman hasil pencarian yang muncul pada jendela atau tab baru, besaran karakter dan jarak yang bisa dikustomisasi pada kolom pencarian, dan lain-lain \citep{allahEtAl2021SearchUi}. penelitian \citet{allahEtAl2021SearchUi} hanya membahas \textit{search engine} dari segi UI dan menyasar pada demografi tertentu.
+
+Setiap \textit{search engine} memiliki arsitektur berbeda-beda. Arsitektur Google dipilih dan dijadikan acuan dalam topik penelitian peningkatan arsitektur \textit{search engine} yang merupakan penelitian induk dari judul penelitian ini karena keunggulannya dibandingkan \textit{search engine} lain. Arsitektur Google dapat dilihat pada gambar \ref{gambar:google_architecture_filled}. Modul \textit{crawler} dan pendukungnya yang ditandai dengan warna biru muda sudah dibuat pada penelitian sebelumnya yang berjudul "Perancangan \textit{Crawler} Sebagai Pendukung Pada Search Engine" oleh \citet{qoriiba2021perancangan}. Pada penelitian tersebut digunakan algoritma \textit{modified similarity based crawling} dan selanjutnya hasil dari \textit{crawling} disimpan kedalam \textit{database} MySQL \citep{qoriiba2021perancangan}. Selanjutnya penelitian berjudul "Perancangan Arsitektur \textit{Search Engine} dengan Mengintegrasikan \textit{Web Crawler}, Algoritma Page \textit{ranking}, dan Dokumen \textit{ranking}" oleh \citet{khatulistiwa2022SearchEngine}. Pada penelitian tersebut digabungkan modul \textit{crawler} dari penelitian \citet{qoriiba2021perancangan}, Pagerank, dan \textit{searcher} pada penelitian lain sebelumnya menjadi \textit{search engine} berbasis konsol \citep{khatulistiwa2022SearchEngine}. Pada modul \textit{indexer} dilakukan penelitian oleh \citet{pratama2022indexer} berjudul "Perancangan Modul Pengindeks pada \textit{Search Engine} Berupa \textit{Induced Generalized Suffix Tree} untuk Keperluan Perangkingan Dokumen" dan \citet{zalghornain2022indexer} berjudul "Rancang Bangun Sistem Pencarian Teks dengan Menggunakan Model \textit{Continuous-Bag-of-Words} dan Model \textit{Continuous Skip-Gram} pada Koleksi Dokumen".
+
+Dalam melakukan perangkingan halaman web, Pagerank dapat didefinisikan pada persamaan \ref{eq:1}. Dimana $u$ adalah halaman web. $F_u$ adalah himpunan halaman $u$ yang menunjuk halaman lain dan $B_u$ adalah himpunan halaman yang menunjuk ke $u$. $C_u = |F_u|$ adalah jumlah \textit{link} dari $u$ dan $c$ adalah faktor yang digunakan untuk normalisasi (sehingga jumlah total \textit{ranking} semua halaman web adalah konstan) dan $c < 1$. $E(u)$ adalah vektor yang berkorespondensi dengan \textit{ranking} halaman web. $||\pi'||_1 = 1$. Iterasi perhitungan terus dilakukan sampai konvergen. Jika diubah kedalam persamaan matriks, maka persamaan \ref{eq:1} dapat diubah menjadi persamaan \ref{eq:2}. Dimana $X$ adalah matriks persegi yang baris dan kolomnya berkorespondensi dengan halaman web, dengan elemen $X_{u,v} = \frac{1}{C_u}$ jika terdapat \textit{link} pada halaman $u$ ke halaman $v$ atau $X_{u,v} = 0$ jika tidak ada.
+
+\begin{equation}
+	\label{eq:1}
+	\pi'(u) = c\sum_{v\in B_u} \frac{\pi'(v)}{C_v} + cE(u)
+\end{equation}
+
+\begin{equation}
+	\label{eq:2}
+	\pi'=c(X\pi' + E)
+\end{equation}
+
+Dasar intuitif dari persamaan \ref{eq:1} adalah \textit{random walks} pada sebuah graf. Anggap pengguna internet sebagai \textit{"random surfer"} yang terus meng-klik \textit{link} selanjutnya secara acak. Namun, jika pengguna terjebak pada sebuah lingkaran halaman web (\textit{link} yang diklik terus menampilkan halaman web yang pernah dikunjungi sebelumnya), tidak mungkin pengguna akan terus mengikuti \textit{link} tersebut, melainkan pengguna akan langsung pindah ke halaman lain. Oleh sebab itu faktor $E$ dipakai untuk memodelkan perilaku ini (Pengguna akan bosan dan langsung lompat ke halaman web lain berdasarkan distribusi pada $E$) \citep{ilprints422}. $E$ dapat didefinisikan oleh pengguna (\textit{user-defined parameter}) dan nilai elemennya dapat diisi dengan nilai yang seragam atau berbeda-beda. Menariknya, jika nilai elemen $E$ dibuat berbeda-beda, maka dapat membuat Pagerank yang dipersonalisasi \citep{ilprints422}.
+
+Walaupun persamaan Pagerank terlihat sederhana, terdapat masalah dari sisi ruang dan waktu. Dari sisi ruang, misal terdapat 1000 halaman web, maka akan terbentuk 1000x1000 matriks $X$. Misal tiap sel elemen $X$ memerlukan memori 8 \textit{Byte}, maka untuk membentuk 1000x1000 matriks $X$, tanpa menghitung alokasi \textit{overhead} memori, memerlukan 8 \textit{Mega Byte} (MB) memori utama (Lihat tabel \ref{table:1}). Di internet terdapat miliaran \textit{website} dan setiap \textit{website} dapat memiliki lebih dari 1 halaman, sehingga untuk bisa membentuk matriks $X$ membutuhkan memori utama dengan kapasitas mencapai \textit{Peta Byte} atau bahkan \textit{Exa Byte}. Hal tersebut sangat tidak mungkin dilakukan pada komputer pribadi biasa yang memori utamanya hanya pada kisaran 4 GB sampai 32 GB, yang berarti ketika program dieksekusi langsung \textit{crash} karena memori yang tidak cukup. Dari sisi waktu, proses \textit{string matching} untuk mengakses nilai \textit{ranking} suatu halaman web berdasarkan \textit{string} URLnya juga memiliki kompleksitas waktu yang besar yakni O(NM), jika dilakukan dengan cara dicari satu-persatu. Beruntung \textit{database} seperti MySQL menggunakan B-Tree dalam mengindeks datanya \citep{mysqlIndex}. B-tree memiliki kompleksitas waktu kecil yakni hanya O(log(n)) \citep{geeksForGeeksBtree}.
+
+\begin{table}[h!]
+	\centering
+	\caption{Tabel alokasi memori utama untuk membentuk matriks $X$}
+	\label{table:1}
+	\begin{tabular}{|c|c|c|c|} 
+		\hline
+		No & Jumlah Halaman Web & Dimensi Matriks & Alokasi Memori (\textit{Byte}) \\
+		\hline
+		
+		\hline
+		1 & 256 & 256 x 256 & 524416 \\
+		2 & 512 & 512 x 512 & 2097280 \\
+		3 & 1024 & 1024 x 1024 & 8388736 \\
+		4 & 2048 & 2048 x 2048 & 33554560 \\
+		5 & 4096 & 4096 x 4096 & 134217856 \\
+		6 & 8192 & 8192 x 8192 & 536871040 \\
+		7 & 16384 & 16384 x 16384 & 2147483776 \\
+		8 & 32768 & 32768 x 32768 & 8589934720 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Telah dilakukan penelitian tentang Pagerank yang terdistribusi dengan metode \textit{iterative aggregation-disaggregation} (IAD) dengan \textit{Block Jacobi smoothing} \citep{zhuetal2005distributedPagerank}. Sederhananya, dilakukan \textit{divide-and-conquer} dengan mengelompokan halaman web berdasarkan \textit{domain}-nya lalu dihitung Pagerank lokalnya dan disatukan dengan metode komunikasi yang hemat memori dengan sebuah koordinator \citep{zhuetal2005distributedPagerank}. Hasilnya, ditemukan sebuah metode Pagerank terdistribusi yang bisa dijalankan pada memori utama kecil dan lebih cepat konvergen sehingga menghemat waktu \citep{zhuetal2005distributedPagerank}. Oleh karena itu, akan dicari algoritma Pagerank alternatif yang dapat dijalankan pada satu mesin komputer dengan memori utama terbatas, dengan cara melakukan perbandingan implementasi beberapa algoritma Pagerank pada satu mesin komputer.
+
+\section{Rumusan Masalah}
+
+Berdasarkan penjelasan sebelumnya, dapat ditemukan sebuah masalah, yaitu bagaimana perbandingan implementasi algoritma-algoritma Pagerank yang dijalankan dalam satu mesin komputer ? 
+
+\section{Pembatasan Masalah}
+
+Pembatasan masalah dirumuskan agar penelitian menjadi lebih fokus dan tidak terlalu luas. Pembatasan masalah pada penelitian ini adalah hanya membandingkan implementasi algoritma-algoritma Pagerank ke dalam satu mesin komputer yang memiliki memori utama terbatas. 
+
+\section{Tujuan Penelitian}
+
+Tujuan dari penelitian ini adalah mencari algoritma alternatif dari algoritma Pagerank pada penelitian \citet{ilprints422} yang selanjutnya akan disebut sebagai Pagerank Original yang dapat dijalankan dengan baik pada satu mesin komputer dengan memori utama terbatas, dengan membandingkannya dengan beberapa algoritma Pagerank pada penelitian-penelitian lainnya.
+
+\section{Manfaat Penelitian}
+
+Penelitian ini diharapkan akan memberikan manfaat bagi beberapa pihak yaitu:
+
+\begin{enumerate}
+\item Bagi Penulis
+
+Mengasah dan mengaplikasikan pengetahuan yang diperoleh selama berkuliah khususnya di bidang \textit{search engine} dan Pagerank sekaligus untuk memperoleh gelar sarjana ilmu komputer.
+
+\item Bagi Universitas Negeri Jakarta
+
+Penelitian ini dapat dijadikan acuan untuk penelitian selanjutnya terutama yang berkaitan dengan \textit{search engine} dan Pagerank. Selain itu juga, memperkaya ragam tulisan akademik yang diterbitkan oleh Universitas Negeri Jakarta.
+
+\item Bagi Masyarakat
+
+Menunjukan masalah implementasi algoritma Pagerank original pada satu mesin komputer yang memiliki memori utama terbatas, dan memberikan alternatif algoritma Pagerank lain dengan segala kelebihan dan kekurangannya.
+\end{enumerate}
